@@ -198,8 +198,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 .nav__inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .brand{display:flex;align-items:center;z-index:1;position:relative}
-.brand__logo{height:38px;width:auto;display:block;transition:filter .4s}
-.on-dark .brand__logo{filter:brightness(0) invert(1)}
+.brand__logo{
+  height:38px;width:auto;display:block;
+  padding:4px 10px;border-radius:6px;
+  background:rgba(246,243,235,0);
+  transition:background .5s;
+}
+.on-dark .brand__logo{background:rgba(246,243,235,.92)}
 
 .menu{display:flex;gap:.1rem;align-items:center;position:relative;z-index:1}
 .menu a{
