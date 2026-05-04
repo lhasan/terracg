@@ -175,36 +175,26 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .nav{
   position:fixed;inset:0 0 auto 0;z-index:1000;
   padding:1.25rem 0;
-  transition:padding .5s var(--e-out), color .5s;
+  transition:padding .5s var(--e-out);
   color:var(--ink);
   pointer-events:none;
 }
 .nav > *{pointer-events:auto}
 .nav::before{
   content:'';position:absolute;inset:0;pointer-events:none;
-  background:transparent;backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0);
-  border-bottom:1px solid transparent;
-  transition:background-color .55s var(--e-out), backdrop-filter .55s, border-color .55s;
-}
-.nav.scrolled{padding:.7rem 0}
-.nav.scrolled::before{
-  background:rgba(246,243,235,.78);
+  background:rgba(246,243,235,.92);
   backdrop-filter:saturate(180%) blur(22px);
   -webkit-backdrop-filter:saturate(180%) blur(22px);
-  border-bottom-color:rgba(223,216,198,.7);
+  border-bottom:1px solid rgba(223,216,198,.6);
+  opacity:0;
+  transition:opacity .5s var(--e-out);
 }
-.on-dark .nav{color:var(--ivory)}
-.on-dark .nav.scrolled::before{background:rgba(10,10,10,.7);border-bottom-color:var(--dk-line-2)}
+.nav.scrolled{padding:.7rem 0}
+.nav.scrolled::before{opacity:1}
 
 .nav__inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .brand{display:flex;align-items:center;z-index:1;position:relative}
-.brand__logo{
-  height:38px;width:auto;display:block;
-  padding:4px 10px;border-radius:6px;
-  background:rgba(246,243,235,0);
-  transition:background .5s;
-}
-.on-dark .brand__logo{background:rgba(246,243,235,.92)}
+.brand__logo{height:38px;width:auto;display:block}
 
 .menu{display:flex;gap:.1rem;align-items:center;position:relative;z-index:1}
 .menu a{
