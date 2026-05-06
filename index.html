@@ -4,64 +4,66 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0A0A0A" />
-<meta name="description" content="Terra Consulting Group — 공공·민간·비영리·지속가능성 부문에서 실행 가능한 전략을 설계하는 한국의 경영·정책 컨설팅 그룹. 2008년 설립." />
+<meta name="description" content="Terra Consulting Group — 공공, 민간, 비영리, 지속가능성, AI·AX 전환 등 다양한 부문에서 실행 가능한 전략을 설계하는 한국의 경영·정책 컨설팅 그룹. 2008년 설립." />
 <meta property="og:title" content="Terra Consulting Group" />
-<meta property="og:description" content="실행 가능한 전략을 설계합니다. 2008년부터 공공·민간·비영리·지속가능성." />
+<meta property="og:description" content="실행 가능한 전략을 설계합니다. 2008년부터, 공공·민간·비영리·지속가능성·AI·AX 전환 등." />
+<meta property="og:type" content="website" />
 <title>Terra Consulting Group — 실행 가능한 전략</title>
 
-<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="icon" type="image/svg+xml" href="assets/symbol.svg" />
+<link rel="alternate icon" type="image/png" href="assets/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Noto+Serif+KR:wght@300;400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 
 <style>
-/* ═══════════════════════════════════════════════════════════════════
-   TOKENS — A consultancy built on earth. Yellow is the sun; ink is the ground.
-   ═══════════════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════════
+   TOKENS
+   ══════════════════════════════════════════════════════════════ */
 :root{
-  /* Brand — distilled from the logo sun */
-  --y:        #F2B705;        /* primary */
-  --y-hi:     #FFCF33;        /* lit */
-  --y-deep:   #B88800;        /* deep / legible on ivory */
-  --y-hush:   #FFF6D6;        /* faint wash */
-  --y-glow:   rgba(242,183,5,.22);
+  /* Brand yellow — warm, matches logo sun */
+  --gold:       #F2B705;
+  --gold-hi:    #FFD84D;
+  --gold-deep:  #C99400;
+  --gold-glow:  rgba(242, 183, 5, .18);
 
-  /* Canvas */
-  --paper:    #F6F3EB;        /* warm ivory */
-  --paper-2:  #EDE8DB;        /* slightly deeper */
-  --paper-3:  #E3DCC8;
-  --line:     #DFD8C6;
-  --line-2:   #C8BFA8;
-  --ink:      #0B0B0B;
-  --ink-2:    #282622;
-  --muted:    #766F63;
-  --muted-2:  #A49C8C;
+  /* Light (ivory) */
+  --bg:         #FAF8F3;
+  --bg-soft:    #F2EFE7;
+  --bg-hush:    #EDE9DE;
+  --ink:        #0B0B0B;
+  --ink-2:      #2A2824;
+  --muted:      #6B6560;
+  --muted-2:    #9A938A;
+  --line:       #E5DFD3;
+  --line-2:     #D8D2C4;
 
-  /* Night */
-  --night:    #0A0A0A;
-  --night-2:  #131210;
-  --night-3:  #1B1915;
-  --ivory:    #F5F1E4;
-  --ivory-2:  #C7C1B2;
-  --dk-mute:  #7E786C;
-  --dk-line:  #211F19;
-  --dk-line-2:#2B281F;
+  /* Dark panel */
+  --dk-bg:      #0A0A0A;
+  --dk-bg-2:    #111111;
+  --dk-bg-3:    #161512;
+  --dk-ink:     #F5F1E8;
+  --dk-ink-2:   #C9C3B5;
+  --dk-muted:   #8B857A;
+  --dk-line:    #1E1C17;
+  --dk-line-2:  #2A2720;
 
   /* Motion */
-  --e-out:    cubic-bezier(.16,1,.3,1);
-  --e-io:     cubic-bezier(.65,0,.35,1);
-  --e-hero:   cubic-bezier(.19,1,.22,1);
-  --e-spring: cubic-bezier(.22,.9,.28,1.12);
+  --ease:       cubic-bezier(.22,.61,.36,1);
+  --ease-out:   cubic-bezier(.16,1,.3,1);
+  --ease-in:    cubic-bezier(.7,0,.84,0);
+  --ease-hero:  cubic-bezier(.19,1,.22,1);
 
-  /* Type */
-  --sans:     "Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
-  --serif:    "Instrument Serif","Fraunces","Pretendard Variable", ui-serif, Georgia, serif;
-  --display:  "Fraunces","Pretendard Variable",-apple-system,sans-serif;
+  /* Type — Pretendard dominant, Fraunces only for latin accents & numerals */
+  --sans: "Pretendard Variable","Pretendard","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;
+  --serif: "Fraunces","Pretendard Variable","Pretendard", ui-serif, Georgia, serif;
+  --accent: "Fraunces","Pretendard Variable","Pretendard",-apple-system,sans-serif;
 
-  --max: 1440px;
-  --pad: clamp(1.25rem, 3.4vw, 2.75rem);
+  /* Layout */
+  --max: 1360px;
+  --pad: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -71,561 +73,528 @@ html{
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   text-rendering:optimizeLegibility;
-  background:var(--paper);
-  overflow-x:clip;
+  background:var(--bg);
 }
+html{overflow-x:clip}
+body{overflow-x:clip}
 body{
-  font-family:var(--sans);color:var(--ink);background:var(--paper);
-  font-weight:400;line-height:1.55;letter-spacing:-.011em;overflow-x:clip;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--bg);
+  font-weight:400;
+  line-height:1.55;
+  letter-spacing:-0.011em;
   min-height:100vh;
+  word-break:keep-all;
+  overflow-wrap:break-word;
 }
+p,li,dd,dt,h1,h2,h3,h4,h5,h6{word-break:keep-all;overflow-wrap:break-word}
+.lead,.hero__desc,.terra-copy__body,.svc-desc,.why-item__body p,.ins__excerpt,.career-q p,.contact-desc,.ceo-msg p{text-wrap:pretty}
 img,svg{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-::selection{background:var(--y);color:#0A0A0A}
+::selection{background:var(--gold);color:#0A0A0A}
 
+/* ══════════════════════════════════════════════════════════════
+   PAGE CHROME
+   ══════════════════════════════════════════════════════════════ */
 .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad);width:100%}
-.section{padding:clamp(3.5rem, 8vh, 6.5rem) 0}
-.night{background:var(--night);color:var(--ivory)}
 
-/* ═══════════════════════════════════════════════════════════════════
-   TYPE SYSTEM
-   ═══════════════════════════════════════════════════════════════════ */
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.7rem;
-  font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--y-deep);
+/* Scroll progress */
+.progress{
+  position:fixed;top:0;left:0;right:0;height:2px;z-index:1200;
+  background:transparent;pointer-events:none;
 }
-.eyebrow::before{content:'';width:2rem;height:1px;background:currentColor;opacity:.8}
-.on-dark .eyebrow{color:var(--y)}
-
-.display{
-  font-family:var(--sans);font-weight:500;letter-spacing:-.042em;line-height:.98;
-  font-size:clamp(3rem, 9vw, 8.6rem);
+.progress__bar{
+  height:100%;width:0;
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-hi));
+  transform-origin:left center;
+  box-shadow:0 0 12px var(--gold-glow);
 }
-.display em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.025em}
-.on-dark .display em{color:var(--y-hi)}
 
-.h1{
-  font-family:var(--sans);font-weight:500;letter-spacing:-.034em;line-height:1.02;
-  font-size:clamp(2.4rem, 6.2vw, 5.2rem);
-}
-.h1 em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.02em}
-.on-dark .h1 em{color:var(--y-hi)}
-
-.h2{
-  font-family:var(--sans);font-weight:500;letter-spacing:-.028em;line-height:1.08;
-  font-size:clamp(1.8rem, 3.8vw, 2.9rem);
-}
-.h2 em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.015em}
-.on-dark .h2 em{color:var(--y-hi)}
-
-.lead{
-  font-size:clamp(1.05rem, 1.4vw, 1.22rem);font-weight:400;line-height:1.58;color:var(--ink-2);
-  letter-spacing:-.006em;max-width:44ch;
-}
-.on-dark .lead{color:var(--ivory-2)}
-
-.micro{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.on-dark .micro{color:var(--dk-mute)}
-
-.rule-gold{height:1px;background:var(--y);border:0}
-
-/* ═══════════════════════════════════════════════════════════════════
-   REVEAL — line-by-line mask reveal (Apple-style)
-   ═══════════════════════════════════════════════════════════════════ */
-.r-up{opacity:0;transform:translate3d(0,26px,0);transition:opacity 1.1s var(--e-out), transform 1.1s var(--e-out)}
-.r-up.is-in{opacity:1;transform:none}
-.r-d1{transition-delay:.08s}
-.r-d2{transition-delay:.16s}
-.r-d3{transition-delay:.24s}
-.r-d4{transition-delay:.32s}
-.r-d5{transition-delay:.40s}
-
-/* mask reveal per line */
-.line-mask{display:block;overflow:hidden;padding:.02em 0}
-.line-mask > span{display:block;transform:translate3d(0,110%,0);transition:transform 1.25s var(--e-hero)}
-.is-in .line-mask > span{transform:none}
-.line-mask.d1 > span{transition-delay:.06s}
-.line-mask.d2 > span{transition-delay:.14s}
-.line-mask.d3 > span{transition-delay:.22s}
-.line-mask.d4 > span{transition-delay:.30s}
-.line-mask.d5 > span{transition-delay:.38s}
-
-/* ═══════════════════════════════════════════════════════════════════
-   CHROME — progress, nav
-   ═══════════════════════════════════════════════════════════════════ */
-.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:1200;pointer-events:none}
-.progress__bar{height:100%;width:0;background:linear-gradient(90deg,var(--y-deep),var(--y),var(--y-hi));box-shadow:0 0 14px var(--y-glow)}
-
-/* Cursor dot (desktop) */
+/* Cursor follower (desktop only) */
 .cursor{
-  position:fixed;top:0;left:0;width:10px;height:10px;border-radius:50%;
-  background:var(--y);pointer-events:none;z-index:1400;
+  position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;
+  background:var(--gold);pointer-events:none;z-index:1300;mix-blend-mode:multiply;
   transform:translate(-50%,-50%) scale(.4);opacity:0;
-  transition:transform .3s var(--e-out), opacity .3s, background .3s;
-  mix-blend-mode:multiply;
+  transition:transform .25s var(--ease-out), opacity .25s var(--ease-out), background .25s;
 }
-.cursor.active{opacity:.9}
-.cursor.hover{transform:translate(-50%,-50%) scale(3.2);background:var(--y-hi);mix-blend-mode:normal}
+.cursor.is-active{opacity:.85}
+.cursor.is-hover{transform:translate(-50%,-50%) scale(2.6);background:var(--gold-hi);mix-blend-mode:normal}
 .on-dark .cursor{mix-blend-mode:screen}
 @media (hover:none){.cursor{display:none}}
 
-/* Nav */
+/* ── Header ── */
 .nav{
   position:fixed;inset:0 0 auto 0;z-index:1000;
-  padding:1.25rem 0;
-  transition:padding .5s var(--e-out);
+  padding:1.1rem 0;transition:padding .5s var(--ease), background-color .5s var(--ease), border-color .5s var(--ease), color .5s var(--ease);
   color:var(--ink);
+}
+.nav::before{
+  content:'';position:absolute;inset:0;
+  background:transparent;backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0);
+  border-bottom:1px solid transparent;
+  transition:background-color .5s var(--ease), backdrop-filter .5s, border-color .5s;
   pointer-events:none;
 }
-.nav > *{pointer-events:auto}
-.nav::before{
-  content:'';position:absolute;inset:0;pointer-events:none;
-  background:rgba(246,243,235,.92);
-  backdrop-filter:saturate(180%) blur(22px);
-  -webkit-backdrop-filter:saturate(180%) blur(22px);
-  border-bottom:1px solid rgba(223,216,198,.6);
-  opacity:0;
-  transition:opacity .5s var(--e-out);
+.nav.is-scrolled{padding:.7rem 0}
+.nav.is-scrolled::before{
+  background:rgba(250,248,243,.82);
+  backdrop-filter:saturate(180%) blur(18px);
+  -webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom-color:var(--line);
 }
-.nav.scrolled{padding:.7rem 0}
-.nav.scrolled::before{opacity:1}
-
+body.on-dark .nav{color:var(--ink)}
+body.on-dark .nav.is-scrolled::before{
+  background:rgba(250,248,243,.88);border-bottom-color:var(--line);
+}
 .nav__inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.brand{display:flex;align-items:center;z-index:1;position:relative}
-.brand__logo{height:48px;width:auto;display:block}
+.brand{display:flex;align-items:center;gap:.65rem;position:relative;z-index:1}
+.brand__logo{
+  display:block;height:88px;width:auto;
+  transition:height .4s var(--ease);
+}
+.nav.is-scrolled .brand__logo{height:64px}
+@media (max-width:860px){
+  .brand__logo{height:64px}
+  .nav.is-scrolled .brand__logo{height:48px}
+}
+@media (max-width:480px){
+  .brand__logo{height:52px}
+  .nav.is-scrolled .brand__logo{height:42px}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-.menu{display:flex;gap:.1rem;align-items:center;position:relative;z-index:1}
+.menu{display:flex;gap:.25rem;align-items:center;position:relative;z-index:1}
 .menu a{
-  position:relative;padding:.55rem .95rem;font-size:.82rem;font-weight:500;letter-spacing:-.005em;
-  color:currentColor;opacity:.65;transition:opacity .35s;
+  position:relative;padding:.5rem .9rem;font-size:.82rem;font-weight:500;letter-spacing:-.005em;
+  color:currentColor;opacity:.7;transition:opacity .3s var(--ease);
 }
 .menu a::after{
-  content:'';position:absolute;left:.95rem;right:.95rem;bottom:.35rem;height:1px;
-  background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--e-out);
+  content:'';position:absolute;left:.9rem;right:.9rem;bottom:.3rem;height:1px;
+  background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease-out);
 }
 .menu a:hover{opacity:1}
 .menu a:hover::after{transform:scaleX(1);transform-origin:left}
 .menu__cta{
-  margin-left:.75rem;padding:.62rem 1.15rem;font-size:.78rem;font-weight:500;letter-spacing:.02em;
-  border:1px solid currentColor;border-radius:999px;opacity:1!important;
-  display:inline-flex;align-items:center;gap:.5rem;transition:all .4s var(--e-out);
+  margin-left:.75rem;padding:.55rem 1.1rem;font-size:.78rem;font-weight:500;
+  letter-spacing:.02em;border:1px solid currentColor;border-radius:999px;
+  opacity:1!important;transition:all .3s var(--ease);
 }
+.menu__cta:hover{background:var(--gold);border-color:var(--gold);color:#0A0A0A!important}
 .menu__cta::after{display:none}
-.menu__cta:hover{background:var(--y);border-color:var(--y);color:#0A0A0A!important}
 
-.burger{display:none;width:40px;height:40px;align-items:center;justify-content:center;position:relative;z-index:1}
-.burger span,.burger span::before,.burger span::after{display:block;width:22px;height:1.5px;background:currentColor;transition:all .4s var(--e-out);position:relative}
-.burger span::before,.burger span::after{content:'';position:absolute;left:0}
-.burger span::before{top:-7px}.burger span::after{top:7px}
-.burger.open span{background:transparent}
-.burger.open span::before{top:0;transform:rotate(45deg)}
-.burger.open span::after{top:0;transform:rotate(-45deg)}
+.burger{display:none;width:38px;height:38px;align-items:center;justify-content:center;position:relative;z-index:1}
+.burger span{display:block;width:20px;height:1.5px;background:currentColor;position:relative;transition:all .4s var(--ease)}
+.burger span::before,.burger span::after{content:'';position:absolute;left:0;width:20px;height:1.5px;background:currentColor;transition:all .4s var(--ease)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger.is-open span{background:transparent}
+.burger.is-open span::before{top:0;transform:rotate(45deg)}
+.burger.is-open span::after{top:0;transform:rotate(-45deg)}
 
 .mobile-menu{
-  position:fixed;inset:0;z-index:900;background:var(--paper);
-  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1rem;
-  padding:0 var(--pad);
-  opacity:0;visibility:hidden;transition:opacity .4s var(--e-out), visibility .4s;
+  position:fixed;inset:0;z-index:900;background:var(--bg);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;
+  opacity:0;visibility:hidden;transition:opacity .4s var(--ease), visibility .4s;
 }
-.mobile-menu.open{opacity:1;visibility:visible}
-.mobile-menu a{font-family:var(--sans);font-size:clamp(2rem,8vw,3.5rem);font-weight:500;letter-spacing:-.04em}
-.mobile-menu a em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep)}
+.mobile-menu.is-open{opacity:1;visibility:visible}
+.mobile-menu a{font-family:var(--sans);font-size:clamp(2rem,7vw,3.5rem);font-weight:300;letter-spacing:-.035em}
 
-@media (max-width:880px){
+@media (max-width:860px){
   .menu{display:none}
   .burger{display:flex}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   HERO — the single frame
-   ═══════════════════════════════════════════════════════════════════ */
-.hero{
-  position:relative;min-height:100svh;padding-top:7rem;padding-bottom:3.5rem;
-  display:flex;flex-direction:column;justify-content:flex-end;
-  overflow:hidden;background:var(--paper);
-  isolation:isolate;
+/* ══════════════════════════════════════════════════════════════
+   TYPE
+   ══════════════════════════════════════════════════════════════ */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.72rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold-deep);
+}
+.on-dark .eyebrow{color:var(--gold)}
+.eyebrow::before{content:'';width:1.8rem;height:1px;background:currentColor;opacity:.7}
+
+.display{
+  font-family:var(--sans);font-weight:500;letter-spacing:-.036em;line-height:1.0;
+  font-size:clamp(2.8rem, 7.2vw, 6.5rem);
+  word-break:keep-all;text-wrap:balance;
+}
+.display em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-deep);letter-spacing:-.02em}
+.on-dark .display em{color:var(--gold-hi)}
+
+.h2{
+  font-family:var(--sans);font-weight:500;letter-spacing:-.03em;line-height:1.06;
+  font-size:clamp(2.2rem, 5.2vw, 4rem);
+  word-break:keep-all;text-wrap:balance;
+}
+.h2 em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-deep);letter-spacing:-.015em}
+.on-dark .h2 em{color:var(--gold-hi)}
+
+.h3{
+  font-family:var(--sans);font-weight:500;letter-spacing:-.018em;line-height:1.2;
+  font-size:clamp(1.25rem, 1.9vw, 1.5rem);
 }
 
-/* Atmospheric sun — interpreted from logo */
+.lead{
+  font-size:clamp(1.05rem, 1.4vw, 1.25rem);font-weight:400;line-height:1.55;color:var(--ink-2);
+  letter-spacing:-.005em;max-width:42ch;
+}
+.on-dark .lead{color:var(--dk-ink-2)}
+
+.meta{font-size:.82rem;color:var(--muted);letter-spacing:0}
+.on-dark .meta{color:var(--dk-muted)}
+
+/* ══════════════════════════════════════════════════════════════
+   REVEAL
+   ══════════════════════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translate3d(0,22px,0);transition:opacity .9s var(--ease-out), transform .9s var(--ease-out)}
+.reveal.is-in{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+.reveal-delay-3{transition-delay:.24s}
+.reveal-delay-4{transition-delay:.32s}
+
+.split{display:inline-block;overflow:hidden;vertical-align:top}
+.split > span{display:inline-block;transform:translate3d(0,110%,0);transition:transform 1.1s var(--ease-hero)}
+.is-in .split > span{transform:none}
+.split > span:nth-child(1){transition-delay:0s}
+.split > span:nth-child(2){transition-delay:.06s}
+.split > span:nth-child(3){transition-delay:.12s}
+.split > span:nth-child(4){transition-delay:.18s}
+.split > span:nth-child(5){transition-delay:.24s}
+.split > span:nth-child(6){transition-delay:.3s}
+.split > span:nth-child(7){transition-delay:.36s}
+
+/* ══════════════════════════════════════════════════════════════
+   SECTION BASE
+   ══════════════════════════════════════════════════════════════ */
+section{position:relative}
+.section{padding:clamp(5rem, 12vh, 9rem) 0}
+.dark-section{background:var(--dk-bg);color:var(--dk-ink)}
+.dark-section .meta{color:var(--dk-muted)}
+.dark-section hr{border-color:var(--dk-line)}
+
+/* ══════════════════════════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════════════════════════ */
+.hero{
+  min-height:100svh;padding-top:6rem;padding-bottom:4rem;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  position:relative;overflow:hidden;
+  background:var(--bg);
+}
 .hero__sun{
   position:absolute;pointer-events:none;z-index:0;
-  top:2%;right:-16%;
-  width:min(78vw,980px);aspect-ratio:1/1;
-  will-change:transform;
-  transition:transform .2s linear;
+  top:6%;right:-12%;
+  width:min(72vw,920px);height:min(72vw,920px);
+  opacity:.95;
 }
-.hero__sun svg{width:100%;height:100%;overflow:visible;animation:breathe 14s ease-in-out infinite}
-@keyframes breathe{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.035)}
+.hero__sun img,.hero__sun svg{
+  width:100%;height:100%;object-fit:contain;
+  animation:drift 22s var(--ease) infinite alternate;
 }
-
-/* Grain */
-.grain{
-  position:absolute;inset:0;pointer-events:none;opacity:.36;mix-blend-mode:multiply;z-index:1;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+@keyframes drift{
+  from{transform:translate3d(0,0,0) rotate(0)}
+  to{transform:translate3d(-14px,8px,0) rotate(6deg)}
 }
-
-.hero__meta{
-  position:absolute;top:7.2rem;left:var(--pad);right:var(--pad);z-index:3;
-  display:flex;justify-content:space-between;gap:1rem;
-  font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
+.hero__grain{
+  position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;z-index:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
-.hero__meta span{display:inline-flex;align-items:center;gap:.75rem}
-.hero__meta .dot{width:6px;height:6px;border-radius:50%;background:var(--y);box-shadow:0 0 0 3px var(--y-hush)}
-@media (max-width:600px){.hero__meta{font-size:.62rem;top:5.5rem}}
-
-.hero__inner{position:relative;z-index:2;display:grid;gap:clamp(2rem,5vh,3.5rem)}
-.hero__title{
-  font-family:var(--sans);font-weight:500;
-  font-size:clamp(3.2rem, 11.5vw, 11.5rem);
-  line-height:.9;letter-spacing:-.055em;
+.hero__inner{position:relative;z-index:2;display:grid;gap:3rem;grid-template-columns:1fr;align-items:end}
+.hero__head{max-width:min(1100px, 92vw)}
+.hero__title{font-size:clamp(3rem, 9vw, 8.4rem);line-height:.98;font-weight:500;font-family:var(--sans);letter-spacing:-.045em;word-break:keep-all;text-wrap:balance}
+.hero__title em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-deep);letter-spacing:-.025em}
+.hero__title .sub{
+  display:block;font-family:var(--sans);font-size:clamp(.75rem,1vw,.82rem);
+  font-weight:500;text-transform:uppercase;letter-spacing:.32em;
+  color:var(--gold-deep);margin-bottom:1.6rem;
 }
-.hero__title .ln{display:block;overflow:hidden;padding:.02em 0}
-.hero__title .ln > span{display:block;transform:translate3d(0,110%,0);transition:transform 1.4s var(--e-hero)}
-.hero.is-in .ln > span{transform:none}
-.hero__title .ln.d2 > span{transition-delay:.12s}
-.hero__title .ln.d3 > span{transition-delay:.24s}
-
-.hero__title em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.03em}
-.hero__title .pin{position:relative;color:var(--ink)}
-.hero__title .pin::after{
-  content:'';position:absolute;left:-.02em;right:-.02em;bottom:.08em;height:.14em;
-  background:var(--y);opacity:.3;border-radius:2px;z-index:-1;
-  transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--e-out) 1s;
+.hero__title .mark{
+  position:relative;display:inline-block;color:var(--gold-deep);
 }
-.hero.is-in .pin::after{transform:scaleX(1)}
+.hero__title .mark::after{
+  content:'';position:absolute;left:-.04em;right:-.04em;bottom:.04em;height:.18em;
+  background:var(--gold);opacity:.28;z-index:-1;border-radius:2px;
+  transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--ease-out) .7s;
+}
+.hero.is-in .hero__title .mark::after{transform:none}
 
 .hero__foot{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2.5rem;align-items:end;
-  margin-top:clamp(2.5rem,6vh,4.5rem);padding-top:1.5rem;
-  border-top:1px solid var(--line-2);
+  display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;
+  margin-top:clamp(3rem,8vh,5rem);padding-top:1.6rem;border-top:1px solid var(--line);
 }
-.hero__desc{max-width:46ch;color:var(--ink-2);font-size:clamp(1rem,1.1vw,1.1rem);line-height:1.65;letter-spacing:-.005em}
-.hero__desc strong{font-weight:500;color:var(--ink);border-bottom:1px solid var(--y);padding-bottom:1px}
-
-.hero__stats{display:flex;gap:clamp(1.5rem,3vw,3rem);flex-wrap:wrap}
-.stat__num{font-family:var(--display);font-weight:300;font-size:clamp(2.2rem,3.6vw,3.2rem);line-height:1;letter-spacing:-.035em;color:var(--ink)}
-.stat__num sup{font-size:.34em;vertical-align:top;margin-left:.1em;color:var(--y-deep);font-style:italic}
-.stat__lbl{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:.55rem;font-weight:500}
+.hero__desc{max-width:42ch;color:var(--ink-2);font-size:clamp(1rem,1.1vw,1.08rem);line-height:1.6}
+.hero__stats{display:flex;gap:2.5rem;flex-wrap:wrap}
+.stat__num{font-family:var(--accent);font-weight:300;font-size:clamp(2rem,3.2vw,2.8rem);line-height:1;letter-spacing:-.03em}
+.stat__num sup{font-size:.4em;vertical-align:top;margin-left:.1em;color:var(--gold-deep)}
+.stat__lbl{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.5rem}
 
 .hero__scroll{
-  position:absolute;left:var(--pad);bottom:1.6rem;z-index:3;
-  display:flex;align-items:center;gap:.8rem;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);
+  position:absolute;left:var(--pad);bottom:1.8rem;z-index:3;
+  display:flex;align-items:center;gap:.75rem;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
 }
-.hero__scroll .line{position:relative;width:44px;height:1px;background:var(--line-2);overflow:hidden}
-.hero__scroll .line::after{content:'';position:absolute;inset:0;background:var(--y-deep);animation:sweep 2.4s var(--e-out) infinite}
-@keyframes sweep{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+.hero__scroll .line{
+  position:relative;display:inline-block;width:40px;height:1px;background:var(--line-2);overflow:hidden;
+}
+.hero__scroll .line::after{content:'';position:absolute;inset:0;background:var(--gold-deep);animation:sweep 2.2s var(--ease-out) infinite}
+@keyframes sweep{0%{transform:translateX(-100%)}60%{transform:translateX(100%)}100%{transform:translateX(100%)}}
 
-@media (max-width:640px){.hero__foot{grid-template-columns:1fr;gap:2rem}.hero__scroll{display:none}}
+@media (max-width:640px){
+  .hero__foot{grid-template-columns:1fr}
+  .hero__scroll{display:none}
+}
 
-/* ═══════════════════════════════════════════════════════════════════
-   MARQUEE — quiet anchor of credibility
-   ═══════════════════════════════════════════════════════════════════ */
-.trust{
-  background:var(--paper-2);
-  padding:1.5rem 0;
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  overflow:hidden;
-  mask-image:linear-gradient(90deg,transparent, black 6%, black 94%, transparent);
-  -webkit-mask-image:linear-gradient(90deg,transparent, black 6%, black 94%, transparent);
-}
-.trust__lead{padding-bottom:.35rem;text-align:center;color:var(--muted)}
-.trust__track{
-  display:flex;gap:3.5rem;width:max-content;align-items:center;
-  animation:ttrack 80s linear infinite;
-  font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.3rem,2.1vw,1.85rem);
-  letter-spacing:-.01em;color:var(--ink);
-}
-.trust:hover .trust__track{animation-play-state:paused}
-@keyframes ttrack{to{transform:translateX(-50%)}}
-.trust__item{white-space:nowrap;display:inline-flex;align-items:center;gap:3.5rem;opacity:.7}
-.trust__item::after{content:'';width:5px;height:5px;border-radius:50%;background:var(--y);flex:none}
-
-/* ═══════════════════════════════════════════════════════════════════
-   MANIFESTO — cinema-scale pinned statement (the MACRO scroll)
-   ═══════════════════════════════════════════════════════════════════ */
-.manifesto{
-  background:var(--night);color:var(--ivory);position:relative;overflow:clip;
-  /* Section is just the pin + one extra viewport for the 4 slides to advance */
-  height:130vh;
-}
-.manifesto::before{
-  content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+/* ══════════════════════════════════════════════════════════════
+   PHILOSOPHY (sticky TERRA reveal)
+   ══════════════════════════════════════════════════════════════ */
+.philosophy{background:var(--dk-bg);color:var(--dk-ink);position:relative}
+.philosophy::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
   background:
-    radial-gradient(60% 40% at 18% 18%, rgba(242,183,5,.07), transparent 60%),
-    radial-gradient(40% 50% at 88% 90%, rgba(242,183,5,.05), transparent 65%);
+    radial-gradient(60% 40% at 20% 0%, rgba(242,183,5,.07), transparent 60%),
+    radial-gradient(40% 50% at 90% 100%, rgba(242,183,5,.05), transparent 60%);
 }
-.manifesto__pin{
-  position:sticky;top:0;height:100vh;
-  display:flex;align-items:stretch;justify-content:center;
-  padding:clamp(4rem,7vh,5rem) var(--pad);
-  overflow:hidden;
-  isolation:isolate;
-}
-.manifesto__frame{
-  position:relative;width:100%;height:100%;max-width:1400px;
-  display:flex;flex-direction:column;justify-content:space-between;gap:clamp(1.5rem,3vh,2.5rem);
-}
-.manifesto__eyebrow{
-  display:flex;justify-content:space-between;align-items:center;
-  font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dk-mute);
-  padding-bottom:1.2rem;border-bottom:1px solid var(--dk-line-2);
-}
-.manifesto__eyebrow .tick{color:var(--y);font-family:var(--display);font-style:italic;font-size:.95rem;letter-spacing:.02em}
-.manifesto__tick{display:inline-flex;align-items:center;gap:.6rem}
-.manifesto__tick::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--y);box-shadow:0 0 0 4px rgba(242,183,5,.15)}
+.philo-wrap{position:relative;z-index:1}
+.philo-intro{padding:clamp(5rem,10vh,8rem) 0 2rem}
+.philo-intro h2{max-width:16ch}
 
-.manifesto__stage{position:relative;flex:1;min-height:40vh;display:flex;align-items:center}
-.manifesto__line{
-  position:absolute;left:0;right:0;top:50%;transform:translate3d(0, calc(-50% + 40px), 0);
-  display:block;
-  font-family:var(--sans);font-weight:500;letter-spacing:-.048em;line-height:1.02;
-  font-size:clamp(2.6rem, 8.5vw, 8.5rem);
-  opacity:0;
-  transition:opacity .45s var(--e-io), transform .7s var(--e-out);
-  pointer-events:none;
+.terra-sticky{
+  height:260vh;position:relative;
 }
-.manifesto__line.is-on{opacity:1;transform:translate3d(0, -50%, 0);pointer-events:auto}
-.manifesto__line em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-hi);letter-spacing:-.03em}
-.manifesto__line .mute{color:var(--dk-mute)}
-.manifesto__line b{font-weight:500;color:var(--y-hi)}
+.terra-sticky__inner{
+  position:sticky;top:0;height:100vh;display:flex;align-items:stretch;
+  padding:clamp(5rem,10vh,8rem) 0 clamp(3rem,6vh,5rem);
+}
+.terra-grid{
+  position:relative;width:100%;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(2rem,5vw,4rem);align-items:center;padding-right:var(--pad);
+}
+.terra-rail{
+  position:absolute;left:calc(var(--pad) * .45);top:50%;transform:translateY(-50%);
+  width:2px;height:min(52vh,420px);background:rgba(245,241,232,.07);border-radius:2px;
+  display:flex;flex-direction:column;gap:4px;pointer-events:none;
+}
+.terra-rail__dot{flex:1;position:relative;overflow:hidden;background:rgba(245,241,232,.04)}
+.terra-rail__dot::after{
+  content:'';position:absolute;inset:0;background:var(--gold);transform:scaleY(0);transform-origin:top;
+  transition:transform .6s var(--ease-out);box-shadow:0 0 16px var(--gold-glow);
+}
+.terra-rail__dot.is-active::after{transform:scaleY(1)}
 
-.manifesto__foot{
-  display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;
-  padding-top:1.2rem;border-top:1px solid var(--dk-line-2);
-  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dk-mute);
+.terra-letters{display:flex;flex-direction:column;justify-content:space-between;gap:.4rem;padding-left:clamp(2rem,4vw,4rem);height:100%;min-height:min(72vh,680px)}
+.terra-letter{
+  position:relative;display:flex;align-items:baseline;gap:1.2rem;
+  font-family:var(--accent);font-weight:400;line-height:.86;letter-spacing:-.05em;
+  font-size:clamp(3.5rem,8vw,6.5rem);
+  color:rgba(245,241,232,.32);
+  transition:color .5s var(--ease), transform .7s var(--ease-out), font-size .55s var(--ease-out), text-shadow .5s;
+  transform:translate3d(-10px,0,0);
+  will-change:color, transform, font-size;
 }
-.manifesto__step{font-family:var(--display);font-style:italic;font-size:1.1rem;letter-spacing:.02em;color:var(--ivory)}
-.manifesto__step b{color:var(--y);font-weight:400;font-size:1.6rem;margin-right:.15em}
+.terra-letter .num{
+  font-family:var(--sans);font-size:.18em;letter-spacing:.3em;color:var(--dk-muted);
+  align-self:start;margin-top:.6em;transition:color .4s;min-width:2em;
+}
+.terra-letter.is-active{color:var(--gold);transform:translate3d(0,0,0)}
+.terra-letter.is-active .num{color:var(--gold)}
+.terra-letter.is-current{
+  color:var(--gold-hi);font-size:clamp(5rem,11vw,9.5rem);
+  text-shadow:0 0 50px rgba(242,183,5,.4);
+}
+.terra-letter.is-current .num{color:var(--gold-hi)}
 
-/* progress bar */
-.manifesto__prog{
-  position:relative;width:180px;height:1px;background:var(--dk-line-2);border-radius:1px;overflow:hidden;
+.terra-copy{padding-right:var(--pad);position:relative;display:flex;flex-direction:column;justify-content:center;height:100%;min-height:min(72vh,680px)}
+.terra-copy__mega{
+  position:absolute;top:50%;right:-.05em;transform:translateY(-50%);
+  font-family:var(--sans);font-style:normal;font-weight:700;
+  font-size:clamp(16rem,32vw,34rem);line-height:.82;letter-spacing:-.06em;
+  color:rgba(242,183,5,.06);pointer-events:none;user-select:none;
+  transition:color .8s var(--ease);z-index:0;
 }
-.manifesto__prog::after{
-  content:'';position:absolute;inset:0;width:var(--p,0%);background:var(--y);
-  transition:width .3s var(--e-out);box-shadow:0 0 10px var(--y-glow);
+.terra-copy__panel{position:relative;min-height:min(42vh,400px);z-index:1;display:flex;flex-direction:column;justify-content:center}
+.terra-copy__item{
+  position:absolute;inset:0;opacity:0;transform:translate3d(0,30px,0);
+  transition:opacity .55s var(--ease), transform .8s var(--ease-out);
+  display:flex;flex-direction:column;gap:1.1rem;
 }
+.terra-copy__item.is-active{opacity:1;transform:none;position:relative}
+.terra-copy__label{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.82rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
+}
+.terra-copy__label::before{content:'';width:1.75rem;height:1px;background:var(--gold)}
+.terra-copy__title{font-family:var(--sans);font-weight:500;font-size:clamp(2.2rem,4vw,3.6rem);line-height:1.15;letter-spacing:-.032em}
+.terra-copy__body{color:var(--dk-ink-2);font-size:clamp(1.15rem,1.4vw,1.35rem);line-height:1.65;max-width:44ch;letter-spacing:-.005em}
 
-@media (max-width:780px){
-  .manifesto{height:auto}
-  .manifesto__pin{position:relative;height:auto;padding:6rem var(--pad)}
-  .manifesto__stage{min-height:auto;display:flex;flex-direction:column;gap:3rem}
-  .manifesto__line{position:relative;top:auto;opacity:1;transform:none;font-size:clamp(2rem,8vw,3.5rem)}
-  .manifesto__line.is-on{transform:none}
+.terra-copy__head{
+  position:relative;z-index:1;display:flex;justify-content:space-between;align-items:baseline;
+  padding-bottom:clamp(1rem,2vh,1.5rem);margin-bottom:clamp(1.5rem,3vh,2.5rem);
+  border-bottom:1px solid var(--dk-line);
 }
+.terra-copy__eyebrow{font-size:.82rem;letter-spacing:.32em;text-transform:uppercase;color:var(--dk-muted)}
+.terra-copy__step{
+  font-family:var(--accent);font-size:1.05rem;color:var(--dk-muted);letter-spacing:.04em;
+  display:inline-flex;align-items:baseline;gap:.45rem;
+}
+.terra-copy__step strong{color:var(--gold);font-weight:700;font-style:normal;font-size:1.5rem}
+.terra-copy__step .sep{opacity:.4}
 
-/* ═══════════════════════════════════════════════════════════════════
-   TERRA — horizontal pin-scroll (Apple-style side-scroll)
-   ═══════════════════════════════════════════════════════════════════ */
-.terra{background:var(--paper);position:relative;overflow:clip}
-.terra__pin{
-  position:sticky;top:0;height:100vh;overflow:hidden;
-  display:flex;flex-direction:column;
+.terra-copy__foot{
+  position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;
+  padding-top:clamp(1.5rem,3vh,2.5rem);margin-top:clamp(1.5rem,3vh,2.5rem);
+  border-top:1px solid var(--dk-line);
 }
-.terra__top{
-  display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;
-  padding:clamp(3rem,6vh,4.5rem) var(--pad) clamp(1.5rem,3vh,2.25rem);
-  flex:none;
-}
-.terra__top h2{max-width:22ch}
-.terra__count{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.8rem,2.6vw,2.4rem);color:var(--muted);letter-spacing:-.01em}
-.terra__count b{color:var(--y-deep);font-weight:400}
-
-.terra__track{
-  flex:1;display:flex;align-items:stretch;gap:clamp(2rem,5vw,4.5rem);
-  padding:0 var(--pad) clamp(3rem,6vh,4rem);
-  will-change:transform;
-  transition:transform .1s linear; /* overridden by rAF direct setter for smoothness */
-}
-.terra__card{
-  flex:none;width:clamp(320px, 44vw, 620px);
-  display:grid;grid-template-rows:auto 1fr auto;gap:1.6rem;
-  padding:2.2rem 2.4rem;border:1px solid var(--line);background:var(--paper-2);
-  position:relative;overflow:hidden;
-  transition:border-color .5s, background .5s;
-}
-.terra__card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:var(--y);transform-origin:left;transform:scaleX(0);
-  transition:transform 1s var(--e-out);
-}
-.terra__card.is-on::before{transform:scaleX(1)}
-.terra__card.is-on{border-color:var(--y-deep);background:var(--paper)}
-
-.terra__head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
-.terra__letter{
-  font-family:var(--display);font-weight:300;font-size:clamp(5rem,7vw,8rem);line-height:.85;letter-spacing:-.05em;color:var(--y);
-  font-style:normal;
-}
-.terra__letter em{font-style:italic}
-.terra__num{font-family:var(--display);font-style:italic;font-size:1.2rem;color:var(--muted);padding-top:.5rem;letter-spacing:.02em}
-
-.terra__body h3{font-family:var(--sans);font-weight:500;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.15;letter-spacing:-.025em;margin-bottom:1rem;max-width:16ch}
-.terra__body h3 em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep)}
-.terra__body p{color:var(--ink-2);font-size:1rem;line-height:1.68;letter-spacing:-.005em;max-width:40ch}
-
-.terra__tag{
-  display:inline-flex;align-items:center;gap:.6rem;padding:.4rem .7rem;
-  background:var(--y-hush);color:var(--y-deep);
-  font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;
-  border-radius:2px;
+.terra-copy__next{display:flex;flex-direction:column;gap:.25rem}
+.terra-copy__next-lbl{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dk-muted)}
+.terra-copy__next-val{font-family:var(--sans);font-style:normal;font-weight:600;font-size:1.25rem;color:var(--dk-ink-2);transition:color .4s;letter-spacing:-.005em}
+.terra-copy__keyword{
+  font-family:var(--sans);font-style:normal;font-weight:700;font-size:clamp(1.7rem,2.8vw,2.4rem);
+  color:var(--gold);letter-spacing:-.015em;transition:opacity .4s;
 }
 
-.terra__foot{
-  padding:0 var(--pad) 1rem;
-  display:flex;justify-content:space-between;align-items:center;gap:1rem;
-  font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
+.terra-hint{
+  position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;
+  font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:var(--dk-muted);
+  opacity:.7;pointer-events:none;transition:opacity .5s;
 }
-.terra__foot .rail{flex:1;height:1px;background:var(--line);position:relative;overflow:hidden;margin:0 1.5rem;max-width:460px}
-.terra__foot .rail::after{content:'';position:absolute;inset:0;width:var(--p,0%);background:var(--y);transition:width .2s var(--e-out)}
-
-@media (max-width:780px){
-  .terra{height:auto}
-  .terra__pin{position:relative;height:auto;overflow:visible}
-  .terra__track{flex-direction:column;transform:none!important;padding-bottom:0}
-  .terra__card{width:100%}
-  .terra__foot{display:none}
+.terra-hint.is-done{opacity:0}
+.terra-hint__line{width:1px;height:32px;background:linear-gradient(var(--gold),transparent);animation:trickle 2s var(--ease) infinite}
+@keyframes trickle{
+  0%{transform:scaleY(0);transform-origin:top}
+  45%{transform:scaleY(1);transform-origin:top}
+  55%{transform:scaleY(1);transform-origin:bottom}
+  100%{transform:scaleY(0);transform-origin:bottom}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+@media (max-width:860px){
+  .terra-sticky{height:auto}
+  .terra-sticky__inner{position:relative;height:auto;padding:4rem 0}
+  .terra-grid{grid-template-columns:1fr;gap:2rem;padding-right:0}
+  .terra-rail,.terra-hint,.terra-copy__mega{display:none}
+  .terra-letters{flex-direction:row;flex-wrap:wrap;padding:0 var(--pad)}
+  .terra-letter{color:var(--gold);font-size:clamp(2rem,9vw,3.5rem);transform:none;text-shadow:none}
+  .terra-letter.is-current{font-size:clamp(2rem,9vw,3.5rem);text-shadow:none}
+  .terra-letter .num{display:none}
+  .terra-copy{padding:0 var(--pad)}
+  .terra-copy__panel{min-height:auto}
+  .terra-copy__item{position:relative;opacity:1;transform:none;margin-bottom:2rem}
+}
+
+/* ══════════════════════════════════════════════════════════════
    CEO
-   ═══════════════════════════════════════════════════════════════════ */
-.ceo{background:var(--paper);position:relative;overflow:hidden}
+   ══════════════════════════════════════════════════════════════ */
+.ceo{background:var(--bg)}
 .ceo-grid{
-  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);
   align-items:start;
 }
-.ceo-msg .eyebrow{margin-bottom:1.4rem}
-.ceo-msg h2{margin-bottom:2.2rem;max-width:18ch}
-.ceo-msg p{color:var(--ink-2);font-size:clamp(1rem,1.15vw,1.1rem);line-height:1.78;margin-bottom:1.05rem;max-width:48ch}
-.ceo-msg p.accent{color:var(--ink);font-weight:450}
-.ceo-msg .sign{
-  display:flex;align-items:baseline;gap:1rem;margin-top:2rem;padding-top:1.4rem;
-  border-top:1px solid var(--line);
-}
-.ceo-msg .sign strong{font-family:var(--display);font-style:italic;font-weight:400;font-size:1.8rem;letter-spacing:-.02em}
-.ceo-msg .sign span{font-size:.72rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}
-
 .ceo-card{
-  position:relative;padding:clamp(1.75rem,3vw,2.75rem);
-  border:1px solid var(--line);background:var(--paper-2);overflow:hidden;
+  position:relative;padding:clamp(1.5rem,3vw,2.75rem);
+  border:1px solid var(--line);background:var(--bg-soft);border-radius:2px;overflow:hidden;
 }
-.ceo-card::after{
-  content:'';position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(100% 80% at 100% 0%, var(--y-hush), transparent 60%);
-  opacity:.8;
+.ceo-card::before{
+  content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold);
 }
-.ceo-card > *{position:relative;z-index:1}
-.ceo-card__crest{
-  font-family:"Fraunces", serif;font-weight:200;font-size:clamp(5rem,8vw,7rem);line-height:.9;
-  color:var(--y-deep);margin-bottom:.5rem;letter-spacing:-.04em;
-}
-.ceo-card h3{font-weight:600;font-size:1.05rem;letter-spacing:-.015em;margin-bottom:.3rem}
-.ceo-card h3 .en{font-weight:400;color:var(--muted);margin-left:.4rem}
-.ceo-card .role{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:1.8rem}
-.ceo-card dl{display:grid;grid-template-columns:84px 1fr;gap:0 1.25rem;font-size:.9rem}
-.ceo-card dt{
-  color:var(--y-deep);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.66rem;
-  padding:1.1rem 0 .3rem;border-top:1px solid var(--line-2);
-}
-.ceo-card dd{color:var(--ink-2);line-height:1.6;padding:1.1rem 0 .3rem;border-top:1px solid var(--line-2)}
-.ceo-card dl > :nth-child(1), .ceo-card dl > :nth-child(2){border-top:0;padding-top:0}
+.ceo-mono{font-family:"Noto Serif KR","Nanum Myeongjo",var(--sans);font-weight:300;font-size:clamp(5rem,8vw,7rem);line-height:.9;color:var(--gold-deep);margin-bottom:.5rem;letter-spacing:-.04em}
+.ceo-card h3{font-family:var(--sans);font-weight:600;font-size:1rem;letter-spacing:-.01em;margin-bottom:.3rem}
+.ceo-card .role{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem}
+.ceo-card dl{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.25rem;font-size:.88rem}
+.ceo-card dt{color:var(--gold-deep);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;padding-top:.35rem}
+.ceo-card dd{color:var(--ink-2);line-height:1.6}
+.ceo-card dd + dt{border-top:1px solid var(--line);padding-top:.95rem;margin-top:.3rem}
+.ceo-card dt + dd{border-top:1px solid var(--line);padding-top:.95rem;margin-top:.3rem}
+.ceo-card dl > :nth-child(1), .ceo-card dl > :nth-child(2){border-top:0!important;padding-top:.35rem!important;margin-top:0!important}
 
-@media (max-width:880px){
-  .ceo-grid{grid-template-columns:1fr}
-  .ceo-card dl{grid-template-columns:1fr}
-  .ceo-card dt{padding-bottom:.25rem}
-  .ceo-card dd{border-top:0;padding-top:0;margin-bottom:.6rem}
+.ceo-msg{position:relative}
+.ceo-msg .eyebrow{margin-bottom:1.5rem}
+.ceo-msg h2{margin-bottom:2rem}
+.ceo-msg p{color:var(--ink-2);font-size:clamp(1.02rem,1.15vw,1.12rem);line-height:1.75;margin-bottom:1rem;max-width:48ch}
+.ceo-msg .sign{
+  display:flex;align-items:baseline;gap:.9rem;margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid var(--line);
 }
+.ceo-msg .sign strong{font-family:var(--sans);font-size:1.5rem;font-weight:500;letter-spacing:-.025em}
+.ceo-msg .sign span{font-size:.78rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 
-/* ═══════════════════════════════════════════════════════════════════
-   SERVICES — rolodex-style hover rows
-   ═══════════════════════════════════════════════════════════════════ */
-.svc{background:var(--paper-2);position:relative;overflow:hidden}
-.svc-head{
-  display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:2rem;align-items:end;
-  margin-bottom:clamp(3rem,6vh,4.5rem);
-}
-.svc-head p{max-width:46ch;color:var(--ink-2);font-size:1.02rem;line-height:1.7}
+@media (max-width:860px){.ceo-grid{grid-template-columns:1fr}}
+
+/* ══════════════════════════════════════════════════════════════
+   SERVICES
+   ══════════════════════════════════════════════════════════════ */
+.svc{background:var(--bg-soft);position:relative;overflow:hidden}
+.svc-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,6vh,4.5rem)}
+.svc-head p{max-width:44ch;color:var(--ink-2);font-size:1.02rem;line-height:1.65}
 @media (max-width:860px){.svc-head{grid-template-columns:1fr}}
 
 .svc-list{border-top:1px solid var(--line-2)}
 .svc-row{
-  position:relative;display:grid;grid-template-columns:72px 1fr minmax(0,1.3fr) auto;gap:2rem;
-  align-items:center;padding:2.4rem clamp(.5rem,2vw,1.5rem);border-bottom:1px solid var(--line-2);
-  cursor:pointer;transition:color .45s var(--e-out), padding .5s var(--e-out);
-  overflow:hidden;
+  position:relative;display:grid;grid-template-columns:80px 1fr 1.2fr auto;gap:2rem;
+  align-items:center;padding:2.4rem 0;border-bottom:1px solid var(--line-2);
+  cursor:pointer;transition:color .4s var(--ease), padding .4s var(--ease);
 }
 .svc-row::before{
-  content:'';position:absolute;inset:0;z-index:0;background:var(--ink);
-  transform:translateY(101%);transform-origin:bottom;transition:transform .6s var(--e-out);
+  content:'';position:absolute;left:0;right:0;top:0;bottom:0;
+  background:var(--ink);transform:scaleY(0);transform-origin:bottom;
+  transition:transform .6s var(--ease-out);z-index:0;
 }
 .svc-row > *{position:relative;z-index:1}
-.svc-row:hover::before{transform:translateY(0)}
-.svc-row:hover{color:var(--ivory)}
-.svc-row:hover .svc-desc{color:var(--ivory-2)}
-.svc-row:hover .svc-num{color:var(--y);-webkit-text-stroke-color:transparent}
-.svc-row:hover .svc-arrow{transform:rotate(-45deg) translate(4px,0);background:var(--y);border-color:var(--y);color:#0A0A0A}
-.svc-row:hover .svc-title em{color:var(--y-hi)}
+.svc-row:hover::before{transform:scaleY(1)}
+.svc-row:hover{color:var(--dk-ink);padding-left:1.5rem;padding-right:1.5rem}
+.svc-row:hover .svc-desc{color:var(--dk-ink-2)}
+.svc-row:hover .svc-num{color:var(--gold)}
+.svc-row:hover .svc-arrow{transform:translateX(8px) rotate(-45deg);color:var(--gold)}
 
-.svc-num{
-  font-family:var(--display);font-style:italic;font-weight:300;font-size:2rem;letter-spacing:-.02em;
-  color:transparent;-webkit-text-stroke:1px var(--muted-2);transition:color .4s, -webkit-text-stroke-color .4s;
-}
-.svc-title{font-family:var(--sans);font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.04;letter-spacing:-.032em;font-weight:500}
-.svc-title em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.018em;transition:color .4s}
-.svc-desc{font-size:.96rem;line-height:1.6;color:var(--ink-2);transition:color .4s;max-width:52ch}
+.svc-num{font-family:var(--accent);font-size:1.7rem;color:var(--muted-2);font-weight:300;letter-spacing:-.03em;transition:color .4s}
+.svc-title{font-family:var(--sans);font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.04;letter-spacing:-.035em;font-weight:500;word-break:keep-all}
+.svc-title em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-deep);letter-spacing:-.015em}
+.svc-row:hover .svc-title em{color:var(--gold-hi)}
+.svc-desc{font-size:.98rem;line-height:1.6;color:var(--ink-2);transition:color .4s;max-width:50ch}
 .svc-arrow{
-  width:46px;height:46px;border-radius:50%;border:1px solid currentColor;
-  display:flex;align-items:center;justify-content:center;flex:none;
-  transition:transform .5s var(--e-out), background .4s, border-color .4s, color .4s;
+  width:44px;height:44px;border-radius:50%;border:1px solid currentColor;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .5s var(--ease-out), color .4s, border-color .4s;
 }
 
 @media (max-width:860px){
-  .svc-row{grid-template-columns:44px 1fr;gap:1rem;padding:1.8rem .5rem}
-  .svc-title{font-size:1.55rem}
+  .svc-row{grid-template-columns:48px 1fr;gap:1rem;padding:2rem 0}
+  .svc-title{font-size:1.6rem}
   .svc-desc{grid-column:1/-1;margin-top:.25rem}
   .svc-arrow{display:none}
+  .svc-row:hover{padding-left:0;padding-right:0}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   WHY — four tiles, strokes that fill
-   ═══════════════════════════════════════════════════════════════════ */
-.why{background:var(--night);color:var(--ivory);position:relative;overflow:hidden}
+/* ══════════════════════════════════════════════════════════════
+   WHY TCG
+   ══════════════════════════════════════════════════════════════ */
+.why{background:var(--dk-bg);color:var(--dk-ink);position:relative;overflow:hidden}
 .why::after{
-  content:'';position:absolute;bottom:-30%;right:-20%;width:70%;aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(50% 50% at 50% 50%, rgba(242,183,5,.10), transparent 60%);
-  pointer-events:none;
+  content:'';position:absolute;inset:auto -10% -20% -10%;height:40%;pointer-events:none;
+  background:radial-gradient(50% 100% at 50% 100%, rgba(242,183,5,.12), transparent 60%);
 }
-.why-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,6vh,4.5rem);position:relative;z-index:1}
-.why-head p{max-width:48ch;color:var(--ivory-2);line-height:1.68}
-@media (max-width:860px){.why-head{grid-template-columns:1fr}}
-
-.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--dk-line-2);position:relative;z-index:1}
+.why-head{max-width:56ch;margin-bottom:clamp(3rem,6vh,5rem)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--dk-line)}
 .why-item{
   position:relative;padding:clamp(2rem,4vw,3.5rem) clamp(1rem,3vw,2.5rem);
-  border-bottom:1px solid var(--dk-line-2);
-  display:grid;grid-template-columns:auto 1fr;gap:1.5rem 2.2rem;align-items:start;
-  transition:background .4s;
+  border-bottom:1px solid var(--dk-line);
+  display:grid;grid-template-columns:auto 1fr;gap:1.4rem 2rem;align-items:start;
+  transition:background .4s var(--ease);
 }
-.why-item:nth-child(odd){border-right:1px solid var(--dk-line-2)}
-.why-item:hover{background:var(--night-3)}
+.why-item:nth-child(odd){border-right:1px solid var(--dk-line)}
+.why-item:hover{background:var(--dk-bg-3)}
 .why-item__num{
-  font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(3rem,5.5vw,4.8rem);
-  line-height:.88;letter-spacing:-.035em;
-  color:transparent;-webkit-text-stroke:1px var(--y);
-  transition:color .5s, -webkit-text-stroke-color .5s;
+  font-family:var(--accent);font-size:clamp(3rem,5.5vw,4.5rem);line-height:.9;
+  font-weight:300;letter-spacing:-.04em;
+  color:transparent;-webkit-text-stroke:1px var(--gold);
+  transition:color .5s var(--ease), -webkit-text-stroke-color .5s;
 }
-.why-item:hover .why-item__num{color:var(--y);-webkit-text-stroke-color:transparent}
-.why-item__body h3{font-family:var(--sans);font-size:clamp(1.25rem,1.8vw,1.55rem);font-weight:500;letter-spacing:-.022em;line-height:1.25;margin-bottom:.8rem}
-.why-item__body h3 em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-hi)}
-.why-item__body p{color:var(--ivory-2);font-size:.94rem;line-height:1.68;max-width:40ch}
-.why-item__tag{font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;color:var(--y);margin-bottom:.6rem;font-weight:500}
+.why-item:hover .why-item__num{color:var(--gold);-webkit-text-stroke-color:transparent}
+.why-item__body h3{font-family:var(--sans);font-size:clamp(1.3rem,1.9vw,1.65rem);font-weight:500;letter-spacing:-.025em;line-height:1.25;margin-bottom:.8rem;word-break:keep-all}
+.why-item__body h3 em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-hi);letter-spacing:-.015em}
+.why-item__body p{color:var(--dk-ink-2);font-size:.96rem;line-height:1.65;max-width:42ch}
+.why-item__tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
 
 @media (max-width:760px){
   .why-grid{grid-template-columns:1fr}
@@ -633,187 +602,180 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .why-item{grid-template-columns:1fr}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════════
    CLIENTS
-   ═══════════════════════════════════════════════════════════════════ */
-.clients{background:var(--paper);position:relative;overflow:hidden}
-.clients-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,5vh,4rem)}
-.clients-head p{max-width:46ch;color:var(--ink-2);line-height:1.68}
+   ══════════════════════════════════════════════════════════════ */
+.clients{background:var(--bg)}
+.clients-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,5vh,4rem)}
+.clients-head p{max-width:44ch;color:var(--ink-2);line-height:1.65}
 @media (max-width:860px){.clients-head{grid-template-columns:1fr}}
 
-.client-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(2rem,4vh,3rem)}
-.client-col{background:var(--paper);padding:clamp(1.4rem,2.5vw,2.2rem)}
-.client-col h3{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--y-deep);margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--line);font-weight:600}
+.marquee{
+  position:relative;overflow:hidden;padding:2.6rem 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  margin-bottom:clamp(3rem,5vh,4rem);
+  mask-image:linear-gradient(90deg,transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent, black 8%, black 92%, transparent);
+}
+.marquee__track{
+  display:flex;gap:3.5rem;width:max-content;animation:scroll 60s linear infinite;
+}
+.marquee:hover .marquee__track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marquee__item{
+  font-family:var(--sans);font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:300;letter-spacing:-.03em;
+  color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:3.5rem;
+  opacity:.5;transition:opacity .3s;
+}
+.marquee__item:hover{opacity:1;color:var(--gold-deep)}
+.marquee__item::after{content:'●';color:var(--gold);font-size:.4em;vertical-align:middle}
+
+.client-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.client-col{background:var(--bg);padding:clamp(1.5rem,2.5vw,2.25rem)}
+.client-col h3{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
 .client-col ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.client-col li{font-size:.88rem;color:var(--ink-2);padding:.2rem 0;letter-spacing:-.005em;transition:color .3s, padding .3s}
-.client-col li:hover{color:var(--ink);padding-left:.4rem}
+.client-col li{font-size:.9rem;color:var(--ink-2);padding:.25rem 0;font-weight:400;letter-spacing:-.005em}
+.client-col li:hover{color:var(--ink)}
 
 @media (max-width:860px){.client-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.client-grid{grid-template-columns:1fr}}
 
-/* ═══════════════════════════════════════════════════════════════════
-   INSIGHTS — editorial cards
-   ═══════════════════════════════════════════════════════════════════ */
-.insights{background:var(--night);color:var(--ivory);position:relative;overflow:hidden}
-.insights-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,5vh,4rem)}
-.insights-head p{max-width:48ch;color:var(--ivory-2);line-height:1.68}
+/* ══════════════════════════════════════════════════════════════
+   INSIGHTS
+   ══════════════════════════════════════════════════════════════ */
+.insights{background:var(--dk-bg);color:var(--dk-ink);position:relative;overflow:hidden}
+.insights-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:end;margin-bottom:clamp(3rem,5vh,4rem)}
+.insights-head p{max-width:44ch;color:var(--dk-ink-2);line-height:1.65}
 @media (max-width:860px){.insights-head{grid-template-columns:1fr}}
 
-.ins-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
-@media (max-width:1000px){.ins-grid{grid-template-columns:repeat(2,1fr)}}
+.ins-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+@media (max-width:1100px){.ins-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.ins-grid{grid-template-columns:1fr}}
 
 .ins{
-  grid-column:span 6;
-  position:relative;padding:2rem 2.1rem 1.5rem;
-  background:var(--night-2);border:1px solid var(--dk-line-2);
-  display:flex;flex-direction:column;gap:1rem;min-height:360px;
-  transition:transform .55s var(--e-out), border-color .4s, background .4s;
+  position:relative;padding:1.75rem 1.5rem 1.5rem;
+  background:var(--dk-bg-2);border:1px solid var(--dk-line);
+  display:flex;flex-direction:column;gap:1rem;min-height:320px;
+  transition:transform .5s var(--ease-out), border-color .4s, background .4s;
   overflow:hidden;
 }
-.ins.span4{grid-column:span 4}
-.ins.span8{grid-column:span 8}
-@media (max-width:1000px){.ins,.ins.span4,.ins.span8{grid-column:span 2}}
-@media (max-width:560px){.ins,.ins.span4,.ins.span8{grid-column:span 1}}
-
-.ins::before{
+.ins::after{
   content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,var(--y),transparent);
-  transform:scaleX(0);transform-origin:center;transition:transform .6s var(--e-out);
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:center;transition:transform .6s var(--ease-out);
 }
-.ins:hover{transform:translateY(-6px);border-color:var(--y-deep);background:var(--night-3)}
-.ins:hover::before{transform:scaleX(1)}
-
-.ins__date{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--y);display:flex;justify-content:space-between;align-items:center;font-weight:500}
-.ins__date .tag{color:var(--dk-mute)}
-.ins__title{font-family:var(--sans);font-size:clamp(1.35rem,1.75vw,1.6rem);line-height:1.22;letter-spacing:-.025em;font-weight:500;flex:1}
-.ins__title em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-hi)}
-.ins__excerpt{font-size:.9rem;color:var(--ivory-2);line-height:1.65;letter-spacing:-.005em}
-.ins__foot{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid var(--dk-line-2);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dk-mute)}
+.ins:hover{transform:translateY(-6px);border-color:var(--gold-deep);background:var(--dk-bg-3)}
+.ins:hover::after{transform:scaleX(1)}
+.ins__date{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;align-items:center}
+.ins__date .tag{color:var(--dk-muted);font-weight:400}
+.ins__title{font-family:var(--sans);font-size:1.28rem;line-height:1.3;letter-spacing:-.028em;font-weight:500;flex:1;word-break:keep-all}
+.ins__title em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-hi);letter-spacing:-.015em}
+.ins__excerpt{font-size:.88rem;color:var(--dk-ink-2);line-height:1.6}
+.ins__foot{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid var(--dk-line)}
+.ins__src{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dk-muted)}
 .ins__arrow{
-  width:34px;height:34px;border-radius:50%;border:1px solid var(--dk-line-2);
+  width:32px;height:32px;border-radius:50%;border:1px solid var(--dk-line-2);
   display:flex;align-items:center;justify-content:center;
-  transition:transform .4s var(--e-out), background .4s, border-color .4s, color .4s;
+  transition:transform .4s var(--ease-out), border-color .4s, background .4s, color .4s;
 }
-.ins:hover .ins__arrow{background:var(--y);border-color:var(--y);color:#0A0A0A;transform:rotate(-45deg)}
+.ins:hover .ins__arrow{background:var(--gold);border-color:var(--gold);color:#0A0A0A;transform:rotate(-45deg)}
 
-.ins--feature{
-  background:linear-gradient(160deg, var(--night-3) 0%, var(--night-2) 100%);
-  border-color:rgba(242,183,5,.18);
-  min-height:440px;
-  padding:2.4rem 2.4rem 1.8rem;
-}
-.ins--feature .ins__title{font-size:clamp(1.8rem,2.6vw,2.4rem);line-height:1.12;max-width:22ch}
-.ins--feature::after{
-  content:'';position:absolute;right:-10%;top:-20%;width:60%;aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(50% 50% at 50% 50%, rgba(242,183,5,.14), transparent 60%);
-  pointer-events:none;z-index:0;
-}
-.ins--feature > *{position:relative;z-index:1}
-
-/* ═══════════════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════════
    CAREER
-   ═══════════════════════════════════════════════════════════════════ */
-.career{background:var(--paper-2);position:relative;overflow:hidden}
+   ══════════════════════════════════════════════════════════════ */
+.career{background:var(--bg-hush);position:relative;overflow:hidden}
 .career-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,5rem);align-items:start}
-@media (max-width:880px){.career-inner{grid-template-columns:1fr}}
-
-.career-q .eyebrow{margin-bottom:1.5rem}
-.career-q__big{font-family:var(--sans);font-weight:500;font-size:clamp(2.5rem,5.5vw,4.2rem);line-height:1.05;letter-spacing:-.036em;margin-bottom:1.5rem}
-.career-q__big em{font-family:var(--display);font-style:italic;font-weight:300;color:var(--y-deep);letter-spacing:-.025em}
-.career-q p{color:var(--ink-2);font-size:1.02rem;line-height:1.7;max-width:42ch;margin-bottom:1.8rem}
+@media (max-width:860px){.career-inner{grid-template-columns:1fr}}
+.career-q{position:relative;padding:2rem 0}
+.career-q__big{
+  font-family:var(--sans);font-weight:500;font-size:clamp(3rem,6vw,4.5rem);line-height:1.04;letter-spacing:-.04em;margin-bottom:1.5rem;
+  word-break:keep-all;text-wrap:balance;
+}
+.career-q__big em{font-family:var(--sans);font-style:normal;font-weight:700;color:var(--gold-deep);letter-spacing:-.025em}
+.career-q p{color:var(--ink-2);font-size:1.02rem;line-height:1.65;max-width:40ch;margin-bottom:1.5rem}
 
 .career-list{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line-2)}
-.career-item{
-  padding:1.5rem 0;border-bottom:1px solid var(--line-2);
-  display:grid;grid-template-columns:180px 1fr;gap:1.5rem;align-items:start;
-  transition:padding .4s var(--e-out);
-}
-.career-item:hover{padding-left:.75rem}
-.career-item dt{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--y-deep);font-weight:600;padding-top:.3rem}
-.career-item dd{font-size:.96rem;line-height:1.65;color:var(--ink-2)}
-.career-item dd a{color:var(--y-deep);border-bottom:1px solid var(--y-deep)}
-@media (max-width:560px){.career-item{grid-template-columns:1fr;gap:.3rem}}
+.career-item{padding:1.4rem 0;border-bottom:1px solid var(--line-2);display:grid;grid-template-columns:180px 1fr;gap:1.5rem;align-items:start}
+.career-item dt{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;padding-top:.3rem}
+.career-item dd{font-size:.95rem;line-height:1.65;color:var(--ink-2)}
+.career-cta{margin-top:2rem}
+@media (max-width:560px){.career-item{grid-template-columns:1fr;gap:.4rem}}
 
 .btn{
-  display:inline-flex;align-items:center;gap:.85rem;
-  padding:1rem 1.9rem;font-size:.78rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
-  border:1px solid var(--ink);color:var(--ink);background:var(--y);
-  transition:all .4s var(--e-out);position:relative;overflow:hidden;border-radius:999px;
+  display:inline-flex;align-items:center;gap:.75rem;
+  padding:1rem 1.75rem;font-size:.82rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--ink);color:var(--ink);background:transparent;
+  transition:all .4s var(--ease);position:relative;overflow:hidden;border-radius:999px;
 }
-.btn::before{content:'';position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .45s var(--e-out);z-index:0}
-.btn:hover::before{transform:translateY(0)}
-.btn:hover{color:var(--y)}
+.btn::before{content:'';position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .4s var(--ease-out);z-index:0}
+.btn:hover::before{transform:none}
+.btn:hover{color:var(--bg);border-color:var(--ink)}
 .btn > *{position:relative;z-index:1}
-.btn .arr{display:inline-block;transition:transform .4s var(--e-out)}
-.btn:hover .arr{transform:translateX(5px)}
+.btn .arr{display:inline-block;transition:transform .4s var(--ease-out)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn-gold{border-color:var(--ink);color:var(--ink);background:var(--gold)}
+.btn-gold::before{background:var(--ink)}
+.btn-gold:hover{color:var(--bg)}
 
-.btn-outline{background:transparent;border-color:currentColor}
-.btn-outline:hover{color:var(--y)}
+.on-dark .btn{border-color:var(--dk-ink);color:var(--dk-ink)}
+.on-dark .btn::before{background:var(--gold)}
+.on-dark .btn:hover{color:#0A0A0A;border-color:var(--gold)}
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════════
    CONTACT + FOOTER
-   ═══════════════════════════════════════════════════════════════════ */
-.contact{background:var(--night);color:var(--ivory);padding-top:clamp(5rem,12vh,9rem);padding-bottom:0;position:relative;overflow:hidden}
-.contact::before{
-  content:'';position:absolute;top:-10%;right:-12%;width:54%;aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(50% 50% at 50% 50%, rgba(242,183,5,.1), transparent 62%);
-  pointer-events:none;
-}
-.contact-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);padding-bottom:clamp(5rem,10vh,7rem);position:relative;z-index:1}
-@media (max-width:880px){.contact-inner{grid-template-columns:1fr}}
+   ══════════════════════════════════════════════════════════════ */
+.contact{background:var(--dk-bg);color:var(--dk-ink);padding-top:clamp(5rem,12vh,9rem);padding-bottom:0;position:relative;overflow:hidden}
+.contact-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);padding-bottom:clamp(5rem,10vh,7rem)}
+@media (max-width:860px){.contact-inner{grid-template-columns:1fr}}
 
-.contact h2{max-width:16ch;margin-bottom:2rem}
-.contact-desc{color:var(--ivory-2);font-size:1.05rem;line-height:1.7;max-width:42ch;margin-bottom:2.5rem}
+.contact h2{max-width:14ch;margin-bottom:2rem}
+.contact-desc{color:var(--dk-ink-2);font-size:1.05rem;line-height:1.65;max-width:40ch;margin-bottom:2.5rem}
 .contact-links{display:flex;flex-direction:column;gap:1rem}
 .contact-links a{
-  display:grid;grid-template-columns:72px 1fr auto;gap:1.2rem;align-items:center;
-  padding:1.1rem 0;border-bottom:1px solid var(--dk-line-2);
-  font-family:var(--sans);font-weight:400;font-size:clamp(1.15rem,1.7vw,1.4rem);letter-spacing:-.018em;
-  transition:color .3s, padding .4s var(--e-out);
+  display:flex;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--dk-line);
+  font-family:var(--sans);font-weight:300;font-size:clamp(1.2rem,1.8vw,1.5rem);letter-spacing:-.02em;transition:color .3s, padding .4s;
 }
-.contact-links a .lbl{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--y);font-weight:500}
-.contact-links a .ar{opacity:.4;transition:opacity .3s, transform .4s var(--e-out)}
-.contact-links a:hover{color:var(--y-hi);padding-left:.6rem}
-.contact-links a:hover .ar{opacity:1;transform:translateX(4px) rotate(-45deg)}
+.contact-links a .lbl{font-family:var(--sans);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);min-width:60px}
+.contact-links a:hover{color:var(--gold-hi);padding-left:.5rem}
 
-.contact-info{padding:2rem;background:var(--night-2);border:1px solid var(--dk-line-2)}
-.contact-info h3{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--y);margin-bottom:1rem;font-weight:600}
-.contact-info address{font-style:normal;color:var(--ivory);line-height:1.65;font-size:1rem;margin-bottom:1.4rem}
-.contact-info .subway{display:flex;flex-direction:column;gap:.55rem;padding-top:1.4rem;border-top:1px solid var(--dk-line-2)}
-.sub-line{display:flex;align-items:center;gap:.75rem;font-size:.88rem;color:var(--ivory-2)}
+.contact-info{padding:2rem;background:var(--dk-bg-2);border:1px solid var(--dk-line)}
+.contact-info h3{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.contact-info address{font-style:normal;color:var(--dk-ink);line-height:1.6;font-size:1rem;margin-bottom:1.5rem}
+.contact-info .subway{display:flex;flex-direction:column;gap:.5rem;padding-top:1.5rem;border-top:1px solid var(--dk-line)}
+.contact-info .sub-line{display:flex;align-items:center;gap:.75rem;font-size:.88rem;color:var(--dk-ink-2)}
 .sub-badge{
   display:inline-flex;align-items:center;justify-content:center;
-  width:22px;height:22px;border-radius:50%;background:var(--y);color:#0A0A0A;
-  font-size:.7rem;font-weight:700;flex-shrink:0;letter-spacing:-.01em;
+  width:22px;height:22px;border-radius:50%;background:var(--gold);color:#0A0A0A;
+  font-family:var(--sans);font-size:.72rem;font-weight:700;flex-shrink:0;letter-spacing:-.01em;
 }
 
 .map{
-  margin-top:1.5rem;width:100%;aspect-ratio:16/7;border:1px solid var(--dk-line-2);
-  filter:grayscale(1) invert(.93) contrast(.92);
+  margin-top:2rem;width:100%;aspect-ratio:16/6;border:1px solid var(--dk-line);
+  filter:grayscale(1) invert(.92) contrast(.95);
   transition:filter .5s;
 }
-.map:hover{filter:grayscale(.5) invert(.93) contrast(.92)}
+.map:hover{filter:grayscale(0.5) invert(.92) contrast(.95)}
 
 .footer{
-  border-top:1px solid var(--dk-line-2);padding:2.25rem 0;
+  border-top:1px solid var(--dk-line);padding:2.5rem 0;
   display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;
-  font-size:.76rem;color:var(--dk-mute);
+  font-size:.78rem;color:var(--dk-muted);letter-spacing:0;
 }
-.footer__brand{display:flex;align-items:center;gap:.75rem;color:var(--ivory)}
-.footer__brand svg{width:22px;height:22px}
+.footer__brand{display:flex;align-items:center;gap:.75rem;color:var(--dk-ink)}
+.footer__brand svg,.footer__brand img{width:24px;height:24px;object-fit:contain}
 .footer__partners{display:flex;gap:2rem}
-.footer__partners span{opacity:.75}
+.footer__partners span{opacity:.7}
 
-/* ═══════════════════════════════════════════════════════════════════
-   REDUCED MOTION
-   ═══════════════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════════
+   MISC
+   ══════════════════════════════════════════════════════════════ */
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-  .r-up{opacity:1;transform:none}
-  .line-mask > span{transform:none}
-  .manifesto__line{opacity:1;transform:none}
-  .manifesto__line:not(:first-child){display:none}
+  .marquee__track{animation:none}
+  .reveal{opacity:1;transform:none}
+  .split > span{transform:none}
 }
 </style>
 </head>
@@ -821,95 +783,78 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 <!-- Cursor -->
 <div class="cursor" aria-hidden="true"></div>
-<!-- Progress -->
-<div class="progress"><div class="progress__bar" id="prog"></div></div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     NAV
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- Progress -->
+<div class="progress"><div class="progress__bar" id="progressBar"></div></div>
+
+<!-- ══════════ NAV ══════════ -->
 <header class="nav" id="nav">
   <div class="container nav__inner">
-    <a href="#top" class="brand" aria-label="Terra Consulting Group" data-h>
-      <img src="assets/logo.png" alt="Terra Consulting Group" class="brand__logo" />
+    <a href="#top" class="brand" aria-label="Terra Consulting Group">
+      <img class="brand__logo" src="assets/terracg.png" alt="Terra Consulting Group — Business Consulting &amp; Advisory" />
     </a>
 
     <nav class="menu" aria-label="주요 메뉴">
-      <a href="#philosophy" data-h>Philosophy</a>
-      <a href="#ceo" data-h>CEO</a>
-      <a href="#services" data-h>Services</a>
-      <a href="#why" data-h>Why TCG</a>
-      <a href="#insights" data-h>Insights</a>
-      <a href="#clients" data-h>Clients</a>
-      <a href="#career" data-h>Career</a>
-      <a href="#contact" class="menu__cta" data-h>Contact <span class="arr">↗</span></a>
+      <a href="#philosophy" data-hover>Philosophy</a>
+      <a href="#ceo" data-hover>CEO</a>
+      <a href="#services" data-hover>Services</a>
+      <a href="#why" data-hover>Why TCG</a>
+      <a href="#clients" data-hover>Clients</a>
+      <a href="#insights" data-hover>Insights</a>
+      <a href="#career" data-hover>Career</a>
+      <a href="#contact" class="menu__cta" data-hover>Contact <span class="arr">→</span></a>
     </nav>
 
     <button class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
-<!-- Mobile menu -->
+<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#philosophy"><em>01</em> Philosophy</a>
-  <a href="#ceo"><em>02</em> CEO</a>
-  <a href="#services"><em>03</em> Services</a>
-  <a href="#why"><em>04</em> Why TCG</a>
-  <a href="#insights"><em>05</em> Insights</a>
-  <a href="#clients"><em>06</em> Clients</a>
-  <a href="#career"><em>07</em> Career</a>
-  <a href="#contact"><em>08</em> Contact</a>
+  <a href="#philosophy">Philosophy</a>
+  <a href="#ceo">CEO</a>
+  <a href="#services">Services</a>
+  <a href="#why">Why TCG</a>
+  <a href="#clients">Clients</a>
+  <a href="#insights">Insights</a>
+  <a href="#career">Career</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     HERO
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="hero" id="top" data-theme="light">
-  <!-- Sun -->
+<!-- ══════════ HERO ══════════ -->
+<section class="hero reveal" id="top" data-theme="light">
+  <!-- Symbol motif (hero background) -->
   <div class="hero__sun" aria-hidden="true">
-    <svg viewBox="0 0 600 600">
-      <defs>
-        <radialGradient id="sg" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#FFD84D" stop-opacity="1"/>
-          <stop offset="40%" stop-color="#F2B705" stop-opacity=".75"/>
-          <stop offset="80%" stop-color="#F2B705" stop-opacity=".05"/>
-          <stop offset="100%" stop-color="#F2B705" stop-opacity="0"/>
-        </radialGradient>
-        <linearGradient id="sg2" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#F2B705" stop-opacity=".9"/>
-          <stop offset="100%" stop-color="#B88800" stop-opacity=".4"/>
-        </linearGradient>
-      </defs>
-      <!-- faint outer rings -->
-      <circle cx="300" cy="300" r="260" fill="none" stroke="#F2B705" stroke-width="1" opacity=".12"/>
-      <circle cx="300" cy="300" r="210" fill="none" stroke="#F2B705" stroke-width="1" opacity=".18"/>
-      <!-- the sun body (interpreted from logo scribble) -->
-      <circle cx="300" cy="300" r="150" fill="url(#sg)"/>
-      <!-- brush stroke arc echoing logo -->
-      <path d="M 180 300 a 120 120 0 1 1 240 0 a 120 120 0 1 1 -240 0" fill="none" stroke="url(#sg2)" stroke-width="16" stroke-linecap="round" opacity=".85"/>
-      <path d="M 200 300 a 100 100 0 1 1 200 0" fill="none" stroke="#F2B705" stroke-width="6" stroke-linecap="round" opacity=".55"/>
-    </svg>
+    <img src="assets/symbol.svg" alt="" loading="eager" decoding="async" />
   </div>
-  <div class="grain" aria-hidden="true"></div>
-
-  <div class="hero__meta">
-    <span><span class="dot"></span> TERRA CONSULTING GROUP · EST. 2008</span>
-    <span>SEOUL · KR</span>
-  </div>
+  <div class="hero__grain" aria-hidden="true"></div>
 
   <div class="container hero__inner">
-    <h1 class="hero__title" aria-label="실행 가능한 전략을 설계합니다.">
-      <span class="ln"><span>실행 가능한</span></span>
-      <span class="ln d2"><span><em>전략</em>을 <span class="pin">설계</span>합니다.</span></span>
-    </h1>
+    <div class="hero__head">
+      <h1 class="hero__title">
+        <span class="sub">Terra Consulting Group · Since 2008</span>
+        실행 가능한<br/>
+        <em>전략</em>을 <span class="mark">설계</span>합니다.
+      </h1>
+    </div>
 
     <div class="hero__foot">
-      <p class="hero__desc r-up r-d3">
-        공공·민간·비영리·지속가능성. 네 영역의 경계에서, <strong>정책과 경영의 언어</strong>를 잇는 한국의 컨설팅 그룹. 진단에서 실행까지 책임지는 대안을 만듭니다.
+      <p class="hero__desc">
+        공공, 민간, 비영리, 지속가능성, AI·AX 전환 등 다섯 영역의 경계에서, 정책·경영·기술의 언어를 잇는 한국의 컨설팅 그룹. 진단에서 실행까지, 책임지는 대안을 만듭니다.
       </p>
-      <div class="hero__stats r-up r-d4">
-        <div class="stat"><div class="stat__num">17<sup>yrs+</sup></div><div class="stat__lbl">Track Record</div></div>
-        <div class="stat"><div class="stat__num">60<sup>+</sup></div><div class="stat__lbl">Clients</div></div>
-        <div class="stat"><div class="stat__num">04</div><div class="stat__lbl">Practices</div></div>
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num">18<sup>년+</sup></div>
+          <div class="stat__lbl">Track Record</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">60<sup>+</sup></div>
+          <div class="stat__lbl">Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">5</div>
+          <div class="stat__lbl">Practices</div>
+        </div>
       </div>
     </div>
   </div>
@@ -917,156 +862,99 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <div class="hero__scroll"><span>Scroll</span><span class="line"></span></div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     TRUST MARQUEE
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="trust" aria-label="Clients we have served">
-  <div class="trust__track">
-    <span class="trust__item">기획재정부</span><span class="trust__item">산림청</span>
-    <span class="trust__item">한국수력원자력</span><span class="trust__item">한국지역난방공사</span>
-    <span class="trust__item">한전KPS</span><span class="trust__item">KOTRA</span>
-    <span class="trust__item">한국토지주택공사</span><span class="trust__item">한국연구재단</span>
-    <span class="trust__item">주택관리공단</span><span class="trust__item">한국가스공사</span>
-    <span class="trust__item">한국마사회</span><span class="trust__item">인천항만공사</span>
-    <span class="trust__item">부산광역시청</span><span class="trust__item">경상북도청</span>
-    <!-- duplicate -->
-    <span class="trust__item">기획재정부</span><span class="trust__item">산림청</span>
-    <span class="trust__item">한국수력원자력</span><span class="trust__item">한국지역난방공사</span>
-    <span class="trust__item">한전KPS</span><span class="trust__item">KOTRA</span>
-    <span class="trust__item">한국토지주택공사</span><span class="trust__item">한국연구재단</span>
-    <span class="trust__item">주택관리공단</span><span class="trust__item">한국가스공사</span>
-    <span class="trust__item">한국마사회</span><span class="trust__item">인천항만공사</span>
-    <span class="trust__item">부산광역시청</span><span class="trust__item">경상북도청</span>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     MANIFESTO — pinned cinema statement
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="manifesto" id="manifesto" data-theme="dark">
-  <div class="manifesto__pin">
-    <div class="manifesto__frame">
-      <div class="manifesto__eyebrow">
-        <span class="manifesto__tick">Manifesto · 2026</span>
-        <span class="tick">Terra — <em>the ground</em></span>
-      </div>
-
-      <div class="manifesto__stage" id="manStage">
-        <div class="manifesto__line is-on" data-i="0">보고서가 아니라,<br/><em>실행</em>을 씁니다.</div>
-        <div class="manifesto__line" data-i="1">정책과 경영,<br/>그 사이의 <em>언어</em>를 다룹니다.</div>
-        <div class="manifesto__line" data-i="2"><span class="mute">아름다운 전략보다</span><br/>움직이는 <em>로드맵</em>이 먼저입니다.</div>
-        <div class="manifesto__line" data-i="3">17년간 축적한 <b>공공의 문법</b>과<br/>민간의 <em>속도</em>를 잇습니다.</div>
-      </div>
-
-      <div class="manifesto__foot">
-        <span class="manifesto__step"><b id="manStep">01</b> <span>/ 04</span></span>
-        <span class="manifesto__prog" id="manProg"></span>
-      </div>
+<!-- ══════════ PHILOSOPHY (sticky TERRA reveal) ══════════ -->
+<section class="philosophy" id="philosophy" data-theme="dark">
+  <div class="container philo-wrap">
+    <div class="philo-intro reveal">
+      <div class="eyebrow">Philosophy</div>
+      <h2 class="h2">사명 <em>TERRA</em>에<br/>우리의 일하는 방식을 담습니다.</h2>
     </div>
   </div>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     TERRA — horizontal pinned scroll
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="terra" id="philosophy" data-theme="light">
-  <div class="terra__pin" id="terraPin">
-    <div class="terra__top">
-      <div>
-        <div class="eyebrow r-up">Philosophy</div>
-        <h2 class="h1 r-up r-d1" style="margin-top:1rem" aria-label="사명 TERRA에 우리의 일하는 방식을 담습니다.">
-          사명 <em>TERRA</em>에<br/>일하는 방식을 담습니다.
-        </h2>
+  <div class="terra-sticky" id="terraSticky">
+    <div class="terra-sticky__inner">
+      <!-- Progress rail -->
+      <div class="terra-rail" aria-hidden="true">
+        <div class="terra-rail__dot is-active" data-i="0"></div>
+        <div class="terra-rail__dot" data-i="1"></div>
+        <div class="terra-rail__dot" data-i="2"></div>
+        <div class="terra-rail__dot" data-i="3"></div>
+        <div class="terra-rail__dot" data-i="4"></div>
       </div>
-      <div class="terra__count r-up r-d2"><b id="terraN">01</b> / 05</div>
-    </div>
 
-    <div class="terra__track" id="terraTrack">
-      <article class="terra__card is-on" data-i="0">
-        <div class="terra__head">
-          <div class="terra__letter">T</div>
-          <div class="terra__num">01</div>
+      <div class="terra-grid">
+        <!-- Letters -->
+        <div class="terra-letters" role="list">
+          <div class="terra-letter is-active is-current" data-i="0" role="listitem"><span class="num">01</span><span>T</span></div>
+          <div class="terra-letter" data-i="1" role="listitem"><span class="num">02</span><span>E</span></div>
+          <div class="terra-letter" data-i="2" role="listitem"><span class="num">03</span><span>R</span></div>
+          <div class="terra-letter" data-i="3" role="listitem"><span class="num">04</span><span>R</span></div>
+          <div class="terra-letter" data-i="4" role="listitem"><span class="num">05</span><span>A</span></div>
         </div>
-        <div class="terra__body">
-          <div class="terra__tag">Trust · 신뢰</div>
-          <h3>신뢰는 전략의 <em>토대</em>입니다.</h3>
-          <p>고객의 철학을 이해하지 못한 컨설팅은 실행되지 않습니다. TCG는 고객의 목표를 공유하고, 현실의 제약을 정직하게 이해하며, 끝까지 책임지는 파트너가 됩니다.</p>
-        </div>
-        <div class="micro">Principle · 01</div>
-      </article>
+        <!-- Copy panel -->
+        <div class="terra-copy">
+          <div class="terra-copy__mega" aria-hidden="true" id="terraMega">T</div>
+          <div class="terra-copy__head">
+            <span class="terra-copy__eyebrow">Philosophy</span>
+            <span class="terra-copy__step"><strong id="terraStep">01</strong> <span class="sep">/</span> 05</span>
+          </div>
+          <div class="terra-copy__panel">
+            <div class="terra-copy__item is-active" data-i="0">
+              <div class="terra-copy__label">T · Trust</div>
+              <div class="terra-copy__title">신뢰는 전략의 토대입니다.</div>
+              <p class="terra-copy__body">고객의 철학을 이해하지 못한 컨설팅은 실행되지 못합니다. TCG는 고객의 목표를 공유하고, 현실을 이해하며, 책임지는 파트너가 됩니다.</p>
+            </div>
+            <div class="terra-copy__item" data-i="1">
+              <div class="terra-copy__label">E · Expertise</div>
+              <div class="terra-copy__title">경험이 깊이를 만듭니다.</div>
+              <p class="terra-copy__body">재정경제부·기획예산처·산림청·한국수력원자력·KOTRA 등 공공과 민간을 오래 경험한 전문가 네트워크. 책 속의 이론이 아닌, 현장에서 검증된 방법론을 씁니다.</p>
+            </div>
+            <div class="terra-copy__item" data-i="2">
+              <div class="terra-copy__label">R · Readiness</div>
+              <div class="terra-copy__title">실행 가능해야 전략입니다.</div>
+              <p class="terra-copy__body">아름다운 보고서보다 실현 가능한 대안을 지향합니다. 고객의 조직·예산·정치적 제약 안에서 움직이는 로드맵을 설계합니다.</p>
+            </div>
+            <div class="terra-copy__item" data-i="3">
+              <div class="terra-copy__label">R · Research</div>
+              <div class="terra-copy__title">근거로 말합니다.</div>
+              <p class="terra-copy__body">데이터, 벤치마크, 이해관계자 인터뷰 등 다양한 방법으로 검증합니다. 모든 권고에는 검증된 근거가 있습니다. 의견이 아니라 증거를 제출합니다.</p>
+            </div>
+            <div class="terra-copy__item" data-i="4">
+              <div class="terra-copy__label">A · Accountability</div>
+              <div class="terra-copy__title">결과에 함께 책임집니다.</div>
+              <p class="terra-copy__body">프로젝트 종료가 관계의 끝이 아닙니다. 변화관리, 리더십 빌딩, 성과 관리 등 TCG는 고객의 실행 파트너로 남습니다.</p>
+            </div>
+          </div>
 
-      <article class="terra__card" data-i="1">
-        <div class="terra__head">
-          <div class="terra__letter">E</div>
-          <div class="terra__num">02</div>
+          <!-- Bottom meta row with next letter preview -->
+          <div class="terra-copy__foot">
+            <div class="terra-copy__next">
+              <span class="terra-copy__next-lbl">Next</span>
+              <span class="terra-copy__next-val" id="terraNext">E · Expertise</span>
+            </div>
+            <div class="terra-copy__keyword" id="terraKeyword">신뢰 Trust</div>
+          </div>
         </div>
-        <div class="terra__body">
-          <div class="terra__tag">Expertise · 경험</div>
-          <h3>경험이 <em>깊이</em>를 만듭니다.</h3>
-          <p>기획재정부·산림청·한수원·KOTRA — 공공과 민간을 오래 겪은 전문가 네트워크. 책의 이론이 아니라 현장에서 검증된 방법론을 씁니다.</p>
-        </div>
-        <div class="micro">Principle · 02</div>
-      </article>
+      </div>
 
-      <article class="terra__card" data-i="2">
-        <div class="terra__head">
-          <div class="terra__letter">R</div>
-          <div class="terra__num">03</div>
-        </div>
-        <div class="terra__body">
-          <div class="terra__tag">Readiness · 실행</div>
-          <h3>실행 가능해야 <em>전략</em>입니다.</h3>
-          <p>아름다운 보고서보다 실현 가능한 대안을 지향합니다. 조직·예산·정치적 제약 안에서 실제로 움직이는 로드맵을 설계합니다.</p>
-        </div>
-        <div class="micro">Principle · 03</div>
-      </article>
-
-      <article class="terra__card" data-i="3">
-        <div class="terra__head">
-          <div class="terra__letter">R</div>
-          <div class="terra__num">04</div>
-        </div>
-        <div class="terra__body">
-          <div class="terra__tag">Research · 근거</div>
-          <h3><em>근거</em>로 말합니다.</h3>
-          <p>데이터·벤치마크·이해관계자 인터뷰. 모든 권고에는 검증된 근거를 붙입니다. 의견이 아니라 증거를 제출합니다.</p>
-        </div>
-        <div class="micro">Principle · 04</div>
-      </article>
-
-      <article class="terra__card" data-i="4">
-        <div class="terra__head">
-          <div class="terra__letter">A</div>
-          <div class="terra__num">05</div>
-        </div>
-        <div class="terra__body">
-          <div class="terra__tag">Accountability · 책임</div>
-          <h3>결과에 함께 <em>책임</em>집니다.</h3>
-          <p>프로젝트 종료가 관계의 끝이 아닙니다. 변화관리, 리더십 빌딩, 성과관리까지 — TCG는 고객의 실행 파트너로 남습니다.</p>
-        </div>
-        <div class="micro">Principle · 05</div>
-      </article>
-    </div>
-
-    <div class="terra__foot">
-      <span>Drag · Scroll</span>
-      <span class="rail" id="terraRail"></span>
-      <span><span id="terraKw">Trust · 신뢰</span></span>
+      <!-- Scroll hint -->
+      <div class="terra-hint" id="terraHint">
+        <span>Scroll</span>
+        <span class="terra-hint__line"></span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     CEO
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ CEO ══════════ -->
 <section class="ceo section" id="ceo" data-theme="light">
   <div class="container">
     <div class="ceo-grid">
-      <div class="ceo-msg r-up">
+      <div class="ceo-msg reveal">
         <div class="eyebrow">CEO Message</div>
-        <h2 class="h1">행복한 국민,<br/>좋은 국가,<br/><em>경쟁력 있는 기업</em>.</h2>
-        <p>테라컨설팅그룹은 국가와 기업이 경쟁력을 갖고 합리적인 정책과 전략을 추진할 수 있도록, 공공과 민간부문의 컨설팅을 수행하는 기관입니다.</p>
-        <p class="accent">공공과 민간부문에서 오랫동안 경험을 쌓은 전문가 네트워크를 바탕으로, 보고서가 아닌 <em style="color:var(--y-deep);font-style:italic;font-family:var(--display)">실천 가능한 대안</em>을 만드는 것에 역점을 두고 있습니다.</p>
+        <h2 class="h2">행복한 국민, <em>좋은 정부</em>,<br/><em>경쟁력 있는 기업</em>을 향하여.</h2>
+        <p>테라컨설팅그룹은 정부와 기업이 경쟁력을 갖고 합리적인 정책과 전략을 추진할 수 있도록 중앙정부, 지방정부, 공공기관, 비영리기관, 민간기업 등을 대상으로 컨설팅을 수행하는 기관입니다.</p>
+        <p>공공과 민간부문에서 오랫동안 경험을 쌓은 전문가 네트워크를 바탕으로, 보고서가 아닌 <em style="color:var(--gold-deep);font-style:normal;font-weight:500">실천 가능한 대안</em>을 만드는 것에 역점을 두고 있습니다.</p>
         <p>TCG의 여정을 관심과 애정으로 지켜봐 주시고, 부족한 부문에 대해서는 따뜻한 격려와 질책을 부탁드리겠습니다.</p>
         <div class="sign">
           <strong>김현석</strong>
@@ -1074,278 +962,358 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         </div>
       </div>
 
-      <aside class="ceo-card r-up r-d2">
-        <div class="ceo-card__crest">金</div>
-        <h3>김현석 <span class="en">Kim, Hyunseok</span></h3>
+      <aside class="ceo-card reveal reveal-delay-2">
+        <div class="ceo-mono">金</div>
+        <h3>김현석 <span style="font-weight:400;color:var(--muted)">Kim, Hyunseok</span></h3>
         <div class="role">Founder · Chief Executive</div>
         <dl>
           <dt>학력</dt>
-          <dd>중앙대학교 대학원 행정학 박사 · 경영학 박사<br/>중앙대학교 경영학 석사 · 경영학 학사</dd>
+          <dd>중앙대학교 대학원 행정학 박사 / 경영학 박사<br/>중앙대학교 경영학 석사 · 경영학 학사</dd>
           <dt>경력</dt>
           <dd>㈜테라컨설팅그룹 대표이사 (현)<br/>국가경영연구원 원장<br/>한양대학교 연구교수<br/>기획예산처 정부개혁실 팀장<br/>한국생산성본부 경영컨설팅사업부 전문위원</dd>
           <dt>자문</dt>
-          <dd>기획재정부 공공기관 운영위원회 정책자문단<br/>대통령직속 지역발전위원회 사업평가위원<br/>국가청렴위원회 정책 투명성 평가모델 자문위원<br/>안산시 지속가능발전위원회 위원</dd>
+          <dd>재정경제부 · 기획예산처 공공기관 운영위원회 정책자문단<br/>대통령직속 지역발전위원회 사업평가위원<br/>국가청렴위원회 정책 투명성 평가모델 자문위원<br/>안산시 지속가능발전위원회 위원 등</dd>
         </dl>
       </aside>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     SERVICES
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ SERVICES ══════════ -->
 <section class="svc section" id="services" data-theme="light">
   <div class="container">
-    <div class="svc-head r-up">
+    <div class="svc-head reveal">
       <div>
         <div class="eyebrow">Practices</div>
-        <h2 class="h1" style="margin-top:1rem">네 개의 영역에서,<br/><em>하나의 원칙</em>으로.</h2>
+        <h2 class="h2">다섯 개의 영역에서,<br/><em>하나의 원칙</em>으로.</h2>
       </div>
-      <p>전략부문을 중심으로 중앙정부·공공기관·공기업·민간기업·지방정부·비영리기관을 대상으로 경영진단, 중장기 전략, Vision 설계, 인사·조직, ESG 경영, 비재무정보 공개까지 수행합니다.</p>
+      <p>전략부문을 중심으로 중앙정부, 지방정부, 공공기관, 비영리기관, 민간기업 등을 대상으로 경영진단, 중장기 전략, Vision 설계, 인사·조직, ESG 경영, AI·AX 전환 등을 수행합니다.</p>
     </div>
 
-    <div class="svc-list r-up">
-      <a class="svc-row" href="#contact" data-h>
+    <div class="svc-list reveal">
+      <a class="svc-row" href="#contact" data-hover>
         <div class="svc-num">01</div>
-        <div class="svc-title">공공 <em>Public</em></div>
-        <div class="svc-desc">중앙정부·지방정부·공공기관의 정책 수립을 위한 자문. 현안 진단에서 문제점 파악, 대안 제시까지 전 단계의 포괄적 서비스.</div>
-        <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="svc-title">공공 <em>Public</em></div>
+        </div>
+        <div class="svc-desc">중앙정부, 지방정부, 공공기관 등의 정책 수립을 위한 자문. 현안 진단에서 문제점 파악, 대안 제시 등 전 단계 포괄적 서비스.</div>
+        <div class="svc-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </a>
-      <a class="svc-row" href="#contact" data-h>
+      <a class="svc-row" href="#contact" data-hover>
         <div class="svc-num">02</div>
-        <div class="svc-title">민간 <em>Private</em></div>
-        <div class="svc-desc">비전·전략 수립, 경영진단, 중장기 발전계획, 신규사업 타당성 분석. 사업구조 재편과 성장 로드맵.</div>
-        <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="svc-title">민간 <em>Private</em></div>
+        </div>
+        <div class="svc-desc">비전·전략 수립, 경영진단, 중장기 발전계획, 신규사업 타당성 분석 등. 사업구조 재편과 성장 로드맵.</div>
+        <div class="svc-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </a>
-      <a class="svc-row" href="#contact" data-h>
+      <a class="svc-row" href="#contact" data-hover>
         <div class="svc-num">03</div>
-        <div class="svc-title">비영리 <em>Non-Profit</em></div>
-        <div class="svc-desc">학교·종교재단 등 비영리기관의 중장기 성장전략, 공익-수익 연계, 운영 투명성 제고, 지배구조 개선.</div>
-        <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="svc-title">비영리 <em>Non-Profit</em></div>
+        </div>
+        <div class="svc-desc">학교, 종교재단 등 비영리기관의 중장기 성장전략, 공익-수익 연계, 운영 투명성 제고, 지배구조 개선 등.</div>
+        <div class="svc-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </a>
-      <a class="svc-row" href="#contact" data-h>
+      <a class="svc-row" href="#contact" data-hover>
         <div class="svc-num">04</div>
-        <div class="svc-title">지속가능성 <em>ESG</em></div>
-        <div class="svc-desc">KSSB · IFRS S1·S2 대응, 지속가능경영 전략, CSV 비즈니스 모델, ESG 평가체계 자문, 지속가능성보고서 전 과정.</div>
-        <div class="svc-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <div class="svc-title">지속가능성 <em>ESG</em></div>
+        </div>
+        <div class="svc-desc">지속가능경영 전략, CSV 비즈니스 모델, ESG 평가체계 자문, 지속가능성보고서 수립 등 전 과정.</div>
+        <div class="svc-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </a>
+      <a class="svc-row" href="#contact" data-hover>
+        <div class="svc-num">05</div>
+        <div>
+          <div class="svc-title">AI · AX 전환 <em>AI Transformation</em></div>
+        </div>
+        <div class="svc-desc">공공, 민간 부문의 AI·AX 도입 전략. 데이터 거버넌스, 업무·조직 재설계, 변화관리, 성과지표 정렬 등 실행으로 이어지는 디지털 전환을 설계합니다.</div>
+        <div class="svc-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     WHY TCG
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ WHY TCG ══════════ -->
 <section class="why section" id="why" data-theme="dark">
   <div class="container">
-    <div class="why-head r-up">
-      <div>
-        <div class="eyebrow">Why TCG</div>
-        <h2 class="h1" style="margin-top:1rem">남들과 다른,<br/><em>실행 가능한 대안</em>을 만듭니다.</h2>
-      </div>
-      <p>고객사 전체의 이익을 도모하는 최고경영진 시각에서, 이론이 아닌 실행을 중심으로. 17년간 축적한 네 가지 원칙이 TCG의 결과물을 만듭니다.</p>
+    <div class="why-head reveal">
+      <div class="eyebrow">Why TCG</div>
+      <h2 class="h2">남들과 다른,<br/><em>실행 가능한 대안</em>을 만듭니다.</h2>
     </div>
 
-    <div class="why-grid r-up">
+    <div class="why-grid reveal">
       <article class="why-item">
         <div class="why-item__num">01</div>
         <div class="why-item__body">
           <div class="why-item__tag">Top-Management View</div>
-          <h3>전사적 · <em>최고경영진</em> 관점</h3>
-          <p>산업·경영 분야의 다양한 전문지식과 경험을 기반으로, 고객사 전체의 이익을 도모할 수 있도록 최고경영진 차원의 통합 관점을 견지합니다.</p>
+          <h3>Cross-functional &amp; <em>Top-Management</em> Perspective</h3>
+          <p>고객사 전체의 이익을 도모할 수 있도록, 다양한 산업·경영 분야 전문지식과 경험을 기반으로 최고 경영진 차원의 통합 관점을 견지합니다.</p>
         </div>
       </article>
       <article class="why-item">
         <div class="why-item__num">02</div>
         <div class="why-item__body">
           <div class="why-item__tag">Actionable</div>
-          <h3>실행가능 · <em>혁신적</em> 해결안</h3>
-          <p>고객의 구체적인 Needs에 부합하는 실행가능하고 혁신적인 해결방안을 제시합니다. 보고서가 아니라 움직일 수 있는 계획이 결과물입니다.</p>
+          <h3>Actionable &amp; <em>Innovative</em> Solutions</h3>
+          <p>고객의 구체적인 Needs에 부합하는 실행가능하고 혁신적인 해결방안을 제시합니다. 보고서가 아닌, 움직일 수 있는 계획이 결과물입니다.</p>
         </div>
       </article>
       <article class="why-item">
         <div class="why-item__num">03</div>
         <div class="why-item__body">
           <div class="why-item__tag">Change Management</div>
-          <h3>리더십 · <em>변화관리</em></h3>
-          <p>효율적인 조직 운영을 위한 리더십을 구축하고, 변화관리 활동을 원활히 수행할 수 있도록 실행 단계까지 지원합니다.</p>
+          <h3>Leadership Building &amp; <em>Change</em> Management</h3>
+          <p>효율적인 조직 운영을 위한 리더십을 구축하고, 변화관리 활동을 원활히 수행할 수 있도록 지원합니다. 실행 단계까지 함께 갑니다.</p>
         </div>
       </article>
       <article class="why-item">
         <div class="why-item__num">04</div>
         <div class="why-item__body">
           <div class="why-item__tag">Collaborative</div>
-          <h3>구조화 · <em>협력적</em> 수행</h3>
-          <p>고객사 리더십 그룹과의 협력적 체계 위에서, 지속적인 커뮤니케이션과 피드백으로 최대한의 성과를 창출합니다.</p>
+          <h3>Structured &amp; <em>Collaborative</em> Project Management</h3>
+          <p>고객사 리더십 그룹과의 협력적 체계를 바탕으로 지속적인 커뮤니케이션과 피드백을 통해 최대한의 성과를 창출합니다.</p>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     INSIGHTS — 2026 currents
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="insights section" id="insights" data-theme="dark">
-  <div class="container">
-    <div class="insights-head r-up">
-      <div>
-        <div class="eyebrow">Insights · 2026</div>
-        <h2 class="h1" style="margin-top:1rem">우리가 주목하는<br/><em>지금의 질문</em>.</h2>
-      </div>
-      <p>KSSB 공시기준 최종 확정, 경영평가 개편, 공공 AI 전환, 2035 NDC. 2026년 상반기, 컨설팅 현장의 중심을 지나는 네 가지 이슈.</p>
-    </div>
-
-    <div class="ins-grid r-up">
-      <a class="ins ins--feature span8" href="#contact" data-h>
-        <div class="ins__date"><span>2026 · Q1 FEATURE</span><span class="tag">ESG · Disclosure</span></div>
-        <h3 class="ins__title">KSSB가 확정된 그 다음 — <em>공시 의무화</em>는 데이터 체계의 문제입니다.</h3>
-        <p class="ins__excerpt">2026년 2월 26일 한국회계기준원 지속가능성기준위원회(KSSB)가 제1·2호 기준을 최종 확정했습니다. 자산 2조 원 이상 코스피 대형사를 1차 대상으로 한 단계적 의무화가 유력한 가운데, 관건은 IFRS S1·S2 기반의 연결 데이터 수집·검증 체계입니다. 중요성 평가, 제3자 검증, 거버넌스 재설계가 동시에 움직여야 합니다.</p>
-        <div class="ins__foot">
-          <span>Practice · ESG & Sustainability</span>
-          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <a class="ins span4" href="#contact" data-h>
-        <div class="ins__date"><span>2026 · Q1</span><span class="tag">Public</span></div>
-        <h3 class="ins__title">경영평가 <em>2026</em>: 공공성이 재무를 앞섰습니다.</h3>
-        <p class="ins__excerpt">재무성과관리 배점이 21→15점으로 축소된 반면, 안전·책임경영 등 공공성 항목이 14→18.5점으로 확대. 기관장 평가도 부활했습니다. 측정이 아니라 실행 체력이 등급을 가릅니다.</p>
-        <div class="ins__foot">
-          <span>Public · Performance</span>
-          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <a class="ins span4" href="#contact" data-h>
-        <div class="ins__date"><span>2026 · Q1</span><span class="tag">Public DX</span></div>
-        <h3 class="ins__title"><em>공공 AI 전환</em>, 시스템이 아니라 조직이 먼저.</h3>
-        <p class="ins__excerpt">정부·공공기관의 AI 도입은 도구 교체가 아닙니다. 업무 재설계, 데이터 거버넌스, 인사제도, 성과지표가 동시에 손질돼야 실행으로 이어집니다.</p>
-        <div class="ins__foot">
-          <span>Public · Transformation</span>
-          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <a class="ins span4" href="#contact" data-h>
-        <div class="ins__date"><span>2025 · Q4</span><span class="tag">Net Zero</span></div>
-        <h3 class="ins__title">2035 NDC · 4기 ETS — <em>전환의 롤링 전략</em>.</h3>
-        <p class="ins__excerpt">2030년까지 2018년 대비 최대 61% 감축. 발전·난방·가스 등 전통 에너지 기관의 사업재편은 ETS 할당계획·K-GX 전략과 맞물린 롤링 시나리오가 필요합니다.</p>
-        <div class="ins__foot">
-          <span>Energy · Strategy</span>
-          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <a class="ins span4" href="#contact" data-h>
-        <div class="ins__date"><span>2025 · Q4</span><span class="tag">Governance</span></div>
-        <h3 class="ins__title">공공기관 <em>ESG 가이드라인</em> 연동.</h3>
-        <p class="ins__excerpt">기재부의 표준 ESG 기준에 맞춰 온실가스·안전·노사·이사회 공시가 경영평가와 연계됩니다. 정량 너머 ‘과정과 계획’까지 평가 대상.</p>
-        <div class="ins__foot">
-          <span>Public · ESG</span>
-          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     CLIENTS
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ CLIENTS ══════════ -->
 <section class="clients section" id="clients" data-theme="light">
   <div class="container">
-    <div class="clients-head r-up">
+    <div class="clients-head reveal">
       <div>
         <div class="eyebrow">Clients</div>
-        <h2 class="h1" style="margin-top:1rem">17년의 <em>파트너십</em>.</h2>
+        <h2 class="h2">함께 일한 <em>기관들</em>.</h2>
       </div>
-      <p>중앙정부와 공기업, 광역자치단체, 주요 공공기관. 정책과 경영이 교차하는 현장에서 쌓아온 관계.</p>
+      <p>중앙정부, 지방정부, 공공기관, 비영리기관, 민간기업 등. 정책과 경영이 교차하는 현장에서 축적한 18년의 파트너십.</p>
     </div>
+  </div>
 
-    <div class="client-grid r-up">
+  <div class="marquee reveal" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">재정경제부</span>
+      <span class="marquee__item">기획예산처</span>
+      <span class="marquee__item">산림청</span>
+      <span class="marquee__item">부산광역시청</span>
+      <span class="marquee__item">대구광역시청</span>
+      <span class="marquee__item">경상북도청</span>
+      <span class="marquee__item">한국수력원자력</span>
+      <span class="marquee__item">한국지역난방공사</span>
+      <span class="marquee__item">한전 KPS</span>
+      <span class="marquee__item">KOTRA</span>
+      <span class="marquee__item">한국토지주택공사</span>
+      <span class="marquee__item">한국연구재단</span>
+      <span class="marquee__item">주택관리공단</span>
+      <span class="marquee__item">한국가스공사</span>
+      <span class="marquee__item">한국마사회</span>
+      <span class="marquee__item">한국콘텐츠진흥원</span>
+      <span class="marquee__item">인천항만공사</span>
+      <span class="marquee__item">국립공원관리공단</span>
+      <span class="marquee__item">스위트케이</span>
+      <span class="marquee__item">플라스틱히어로</span>
+      <span class="marquee__item">외 다수</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee__item">재정경제부</span>
+      <span class="marquee__item">기획예산처</span>
+      <span class="marquee__item">산림청</span>
+      <span class="marquee__item">부산광역시청</span>
+      <span class="marquee__item">대구광역시청</span>
+      <span class="marquee__item">경상북도청</span>
+      <span class="marquee__item">한국수력원자력</span>
+      <span class="marquee__item">한국지역난방공사</span>
+      <span class="marquee__item">한전 KPS</span>
+      <span class="marquee__item">KOTRA</span>
+      <span class="marquee__item">한국토지주택공사</span>
+      <span class="marquee__item">한국연구재단</span>
+      <span class="marquee__item">주택관리공단</span>
+      <span class="marquee__item">한국가스공사</span>
+      <span class="marquee__item">한국마사회</span>
+      <span class="marquee__item">한국콘텐츠진흥원</span>
+      <span class="marquee__item">인천항만공사</span>
+      <span class="marquee__item">국립공원관리공단</span>
+      <span class="marquee__item">스위트케이</span>
+      <span class="marquee__item">플라스틱히어로</span>
+      <span class="marquee__item">외 다수</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="client-grid reveal">
       <div class="client-col">
         <h3>경영전략</h3>
         <ul>
-          <li>기획재정부</li><li>산림청</li><li>부산광역시청</li><li>대구광역시청</li>
-          <li>경상북도청</li><li>한국지역난방공사</li><li>한국수력원자력</li>
-          <li>한전 KPS</li><li>인천항만공사</li><li>한국철도시설공단</li>
-          <li>한국마사회</li><li>지역발전위원회</li>
+          <li>재정경제부</li>
+          <li>기획예산처</li>
+          <li>산림청</li>
+          <li>부산광역시청</li>
+          <li>대구광역시청</li>
+          <li>경상북도청</li>
+          <li>한국지역난방공사</li>
+          <li>한국수력원자력</li>
+          <li>한전 KPS</li>
+          <li>인천항만공사</li>
+          <li>한국철도시설공단</li>
+          <li>한국마사회</li>
+          <li>지역발전위원회</li>
+          <li>외 다수</li>
         </ul>
       </div>
       <div class="client-col">
-        <h3>평가 · 성과관리</h3>
+        <h3>평가·성과관리</h3>
         <ul>
-          <li>기획재정부</li><li>국토해양부</li><li>한국산업안전보건공단</li>
-          <li>한국수자원공사</li><li>KOTRA</li><li>한국토지주택공사</li>
-          <li>한국경제연구원</li><li>한국산업기술평가관리원</li>
-          <li>사행산업통합감독위원회</li><li>지역발전위원회</li>
+          <li>재정경제부</li>
+          <li>기획예산처</li>
+          <li>국토해양부</li>
+          <li>한국산업안전보건공단</li>
+          <li>한국수자원공사</li>
+          <li>대한무역투자진흥공사</li>
+          <li>한국토지주택공사</li>
+          <li>한국산업기술평가관리원</li>
+          <li>사행산업통합감독위원회</li>
+          <li>지역발전위원회</li>
+          <li>한국경제연구원</li>
+          <li>외 다수</li>
         </ul>
       </div>
       <div class="client-col">
-        <h3>조직 · 인사</h3>
+        <h3>조직·인사</h3>
         <ul>
-          <li>기획재정부</li><li>경상북도</li><li>산림청</li>
-          <li>용인지방공사</li><li>부산국제영화제</li><li>한국생산성본부</li>
+          <li>재정경제부</li>
+          <li>기획예산처</li>
+          <li>산림청</li>
+          <li>경상북도</li>
+          <li>용인지방공사</li>
+          <li>한국생산성본부</li>
+          <li>부산국제영화제</li>
+          <li>외 다수</li>
         </ul>
       </div>
       <div class="client-col">
-        <h3>에너지 · 환경 · 안전 · AI</h3>
+        <h3>에너지·환경·안전·AI</h3>
         <ul>
-          <li>한국지역난방공사</li><li>한전 KPS</li><li>한국남동발전</li>
-          <li>한국서부발전</li><li>한국가스공사</li><li>경상북도</li>
-          <li>한국산업안전보건공단</li><li>호서대학교산단</li>
-          <li>한국연구재단</li><li>스위트케이</li>
-          <li>주택관리공단</li><li>플라스틱히어로</li>
+          <li>경상북도</li>
+          <li>한국지역난방공사</li>
+          <li>한전 KPS</li>
+          <li>한국남동발전</li>
+          <li>한국서부발전</li>
+          <li>한국가스공사</li>
+          <li>한국산업안전보건공단</li>
+          <li>한국연구재단</li>
+          <li>주택관리공단</li>
+          <li>호서대학교산단</li>
+          <li>스위트케이</li>
+          <li>플라스틱히어로</li>
+          <li>외 다수</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     CAREER
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ INSIGHTS ══════════ -->
+<section class="insights section" id="insights" data-theme="dark">
+  <div class="container">
+    <div class="insights-head reveal">
+      <div>
+        <div class="eyebrow">Insights</div>
+        <h2 class="h2">우리가 주목하는 <em>주제</em>.</h2>
+      </div>
+      <p>컨설팅 현장과 국제 정책 기류를 가로지르는 최신 이슈들. 고객과 함께 풀어가는 질문의 지도.</p>
+    </div>
+
+    <div class="ins-grid reveal">
+      <a class="ins" href="https://www.fsc.go.kr/" target="_blank" rel="noopener">
+        <div class="ins__date"><span>2026 · Q1</span><span class="tag">ESG</span></div>
+        <h3 class="ins__title">한국 <em>ESG 공시 의무화</em>의 현실적 로드맵</h3>
+        <p class="ins__excerpt">자산 2조원 이상 상장사 대상, KSSB 기준 단계적 도입. 중요성 평가·제3자 검증·거버넌스 재설계가 동시에 움직여야 합니다.</p>
+        <div class="ins__foot">
+          <span class="ins__src">Practice · ESG</span>
+          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="ins" href="https://www.mois.go.kr/" target="_blank" rel="noopener">
+        <div class="ins__date"><span>2026 · Q1</span><span class="tag">Public DX</span></div>
+        <h3 class="ins__title"><em>공공 부문 AI 전환</em>, 조직설계부터 다시.</h3>
+        <p class="ins__excerpt">정부 AI 도입은 시스템이 아니라 업무 재설계. 데이터 거버넌스·인사제도·성과지표를 동시에 손대야 실행으로 이어집니다.</p>
+        <div class="ins__foot">
+          <span class="ins__src">Practice · Public</span>
+          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="ins" href="https://www.alio.go.kr/" target="_blank" rel="noopener">
+        <div class="ins__date"><span>2025 · Q4</span><span class="tag">Performance</span></div>
+        <h3 class="ins__title">공공기관 <em>경영평가 2.0</em>: 실행의 재발견</h3>
+        <p class="ins__excerpt">평가지표 개편 이후, KPI가 아닌 '실행 체력'이 점수를 가릅니다. 조직-예산-데이터가 맞물린 성과관리 체계가 필요합니다.</p>
+        <div class="ins__foot">
+          <span class="ins__src">Practice · Public</span>
+          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="ins" href="https://www.motie.go.kr/" target="_blank" rel="noopener">
+        <div class="ins__date"><span>2025 · Q4</span><span class="tag">Net Zero</span></div>
+        <h3 class="ins__title">에너지 전환 시대의 <em>기관 중장기 전략</em></h3>
+        <p class="ins__excerpt">발전·난방·가스 — 전통 에너지 기관의 사업재편은 탄소중립 시나리오와 규제-시장 변수를 통합한 롤링 전략이 필요합니다.</p>
+        <div class="ins__foot">
+          <span class="ins__src">Practice · Energy</span>
+          <span class="ins__arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CAREER ══════════ -->
 <section class="career section" id="career" data-theme="light">
   <div class="container">
     <div class="career-inner">
-      <div class="career-q r-up">
+      <div class="career-q reveal">
         <div class="eyebrow">Career</div>
         <div class="career-q__big">당신의 <em>비전</em>은<br/>무엇입니까?</div>
-        <p>컨설턴트의 역량과 태도만큼, 함께 일할 사람의 <strong style="color:var(--ink);font-weight:500">철학과 정신</strong>을 중요하게 여깁니다. TCG는 고객의 문제를 넘어 새로운 가치를 만드는 동료를 찾습니다.</p>
-        <a class="btn" href="mailto:terra@terracg.co.kr?subject=Career%20Inquiry" data-h><span>지원하기</span><span class="arr">→</span></a>
+        <p>컨설턴트의 역량과 태도만큼, 함께 일할 사람의 <strong style="color:var(--ink);font-weight:500">철학과 정신</strong>을 중요하게 여깁니다. TCG는 고객의 문제를 뛰어넘어 새로운 가치를 만드는 동료를 찾습니다.</p>
+        <a class="btn btn-gold career-cta" href="mailto:terra@terracg.co.kr?subject=Career%20Inquiry"><span>지원하기</span><span class="arr">→</span></a>
       </div>
 
-      <dl class="career-list r-up r-d2">
+      <dl class="career-list reveal reveal-delay-2">
         <div class="career-item"><dt>지원대상</dt><dd>대학·대학원 졸업자 및 졸업예정자 (MBA 또는 동등한 석·박사 학위 포함)</dd></div>
         <div class="career-item"><dt>채용시기</dt><dd>상시채용</dd></div>
         <div class="career-item"><dt>모집직위</dt><dd>인턴 · 신입 컨설턴트 · 경력 컨설턴트<br/><span style="color:var(--muted);font-size:.86rem">인턴 우수성과자의 경우 3~6개월 종료 후 컨설턴트 Offer</span></dd></div>
         <div class="career-item"><dt>프로세스</dt><dd>서류 심사 · 최소 2회 인터뷰</dd></div>
         <div class="career-item"><dt>제출서류</dt><dd>이력서 (학력·성적·외국어·주요 경력) · 자기소개서 (비전·보람·회고) · 학위증명서</dd></div>
-        <div class="career-item"><dt>문의</dt><dd><a href="mailto:terra@terracg.co.kr">terra@terracg.co.kr</a> · 02-554-5012</dd></div>
+        <div class="career-item"><dt>문의</dt><dd><a href="mailto:terra@terracg.co.kr" style="color:var(--gold-deep);border-bottom:1px solid var(--gold-deep)">terra@terracg.co.kr</a> · 02-554-5012</dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     CONTACT + FOOTER
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════ CONTACT ══════════ -->
 <section class="contact" id="contact" data-theme="dark">
   <div class="container contact-inner">
-    <div class="r-up">
+    <div class="reveal">
       <div class="eyebrow">Contact</div>
-      <h2 class="h1" style="margin-top:1rem">같이 일할 준비가<br/>되셨다면,<br/><em>연락주세요.</em></h2>
+      <h2 class="h2">같이 일할 준비가<br/>되셨다면, <em>연락주세요.</em></h2>
       <p class="contact-desc">진단이든, 전략이든, 실행이든. 첫 대화는 언제나 가능합니다.</p>
 
       <div class="contact-links">
-        <a href="mailto:terra@terracg.co.kr" data-h><span class="lbl">Email</span><span>terra@terracg.co.kr</span><span class="ar">↗</span></a>
-        <a href="tel:0225545012" data-h><span class="lbl">Phone</span><span>02 · 554 · 5012</span><span class="ar">↗</span></a>
-        <a href="https://map.naver.com/v5/search/코엑스인터컨티넨탈서울" target="_blank" rel="noopener" data-h><span class="lbl">Visit</span><span>COEX InterContinental, B227</span><span class="ar">↗</span></a>
+        <a href="mailto:terra@terracg.co.kr"><span class="lbl">Email</span><span>terra@terracg.co.kr</span></a>
+        <a href="tel:0225545012"><span class="lbl">Phone</span><span>02 · 554 · 5012</span></a>
+        <a href="https://map.naver.com/v5/search/코엑스인터컨티넨탈서울" target="_blank" rel="noopener"><span class="lbl">Visit</span><span>COEX InterContinental, B227</span></a>
       </div>
     </div>
 
-    <div class="r-up r-d2">
+    <div class="reveal reveal-delay-2">
       <div class="contact-info">
         <h3>Office</h3>
         <address>
@@ -1370,15 +1338,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
   <div class="container footer">
     <div class="footer__brand">
-      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <circle cx="20" cy="20" r="7" fill="#F2B705"/>
-        <g stroke="#F2B705" stroke-width="1.6" stroke-linecap="round">
-          <line x1="20" y1="5" x2="20" y2="9"/><line x1="20" y1="31" x2="20" y2="35"/>
-          <line x1="5" y1="20" x2="9" y2="20"/><line x1="31" y1="20" x2="35" y2="20"/>
-          <line x1="9.5" y1="9.5" x2="12" y2="12"/><line x1="28" y1="28" x2="30.5" y2="30.5"/>
-          <line x1="30.5" y1="9.5" x2="28" y2="12"/><line x1="9.5" y1="30.5" x2="12" y2="28"/>
-        </g>
-      </svg>
+      <img src="assets/symbol.svg" alt="" aria-hidden="true" />
       <span>© 2008 — <span id="year">2026</span> Terra Consulting Group. All rights reserved.</span>
     </div>
     <div class="footer__partners">
@@ -1391,40 +1351,45 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 <script>
 (() => {
   'use strict';
-  const $  = (s, r=document) => r.querySelector(s);
+  const $ = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Year */
+  /* ── Year ── */
   $('#year').textContent = new Date().getFullYear();
 
-  /* ── Nav + progress ── */
+  /* ── Nav scroll state ── */
   const nav = $('#nav');
-  const prog = $('#prog');
   const onScroll = () => {
-    nav.classList.toggle('scrolled', window.scrollY > 16);
+    nav.classList.toggle('is-scrolled', window.scrollY > 16);
+    // progress
     const h = document.documentElement;
-    const pct = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
-    prog.style.width = (pct*100).toFixed(2)+'%';
+    const pct = h.scrollTop / (h.scrollHeight - h.clientHeight);
+    $('#progressBar').style.width = (pct*100).toFixed(2)+'%';
   };
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
   /* ── Mobile menu ── */
-  const burger = $('#burger'), mobile = $('#mobileMenu');
+  const burger = $('#burger');
+  const mobile = $('#mobileMenu');
   burger.addEventListener('click', () => {
-    const open = !burger.classList.contains('open');
-    burger.classList.toggle('open', open);
-    mobile.classList.toggle('open', open);
+    const open = !burger.classList.contains('is-open');
+    burger.classList.toggle('is-open', open);
+    mobile.classList.toggle('is-open', open);
     burger.setAttribute('aria-expanded', String(open));
     document.body.style.overflow = open ? 'hidden' : '';
   });
   $$('#mobileMenu a').forEach(a => a.addEventListener('click', () => {
-    burger.classList.remove('open'); mobile.classList.remove('open');
+    burger.classList.remove('is-open');
+    mobile.classList.remove('is-open');
     document.body.style.overflow = '';
   }));
 
-  /* ── Reveal observer ── */
+  /* ── Split text (hero title lines only) ── */
+  // lightweight; only for eyebrow-like lines. Skip for now — handled via reveal.
+
+  /* ── Reveal on scroll ── */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting){
@@ -1432,51 +1397,108 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         io.unobserve(e.target);
       }
     });
-  }, {threshold:.14, rootMargin:'0px 0px -5% 0px'});
-  $$('.r-up').forEach(el => io.observe(el));
-  // Hero: trigger immediately so mask-reveal lines animate on load
-  requestAnimationFrame(() => $$('.hero').forEach(el => el.classList.add('is-in')));
+  }, {threshold: 0.14, rootMargin: '0px 0px -5% 0px'});
+  $$('.reveal').forEach(el => io.observe(el));
 
-  /* ── Theme per section (dark/light for nav+cursor) ── */
+  /* ── Theme switcher per section (light/dark) for nav + cursor blend ── */
+  const themeSections = $$('[data-theme]');
   const themeIO = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if (e.isIntersecting && e.intersectionRatio > .4){
+      if (e.isIntersecting && e.intersectionRatio > 0.35){
         const t = e.target.getAttribute('data-theme');
         document.body.classList.toggle('on-dark', t === 'dark');
+        nav.dataset.theme = t;
       }
     });
-  }, {threshold:[.4,.7]});
-  $$('[data-theme]').forEach(s => themeIO.observe(s));
+  }, {threshold: [0.35, 0.6]});
+  themeSections.forEach(s => themeIO.observe(s));
 
-  /* ── Cursor (desktop fine pointer) ── */
+  /* ── TERRA sticky scroll — rAF loop for bulletproof updates ── */
+  const sticky = $('#terraSticky');
+  if (sticky){
+    const letters = $$('.terra-letter', sticky);
+    const copies = $$('.terra-copy__item', sticky);
+    const dots = $$('.terra-rail__dot', sticky);
+    const mega = $('#terraMega');
+    const hint = $('#terraHint');
+    const stepEl = $('#terraStep');
+    const nextEl = $('#terraNext');
+    const keywordEl = $('#terraKeyword');
+    const megaChars = ['T','E','R','R','A'];
+    const nextLabels = ['E · Expertise','R · Readiness','R · Research','A · Accountability','— 완결'];
+    const keywords = ['신뢰 Trust','경험 Expertise','실행 Readiness','근거 Research','책임 Accountability'];
+    let lastIdx = -1;
+    const setTerra = i => {
+      if (i === lastIdx) return;
+      lastIdx = i;
+      letters.forEach((el,idx) => {
+        el.classList.toggle('is-active', idx <= i);
+        el.classList.toggle('is-current', idx === i);
+      });
+      copies.forEach((el,idx) => el.classList.toggle('is-active', idx === i));
+      dots.forEach((el,idx) => el.classList.toggle('is-active', idx <= i));
+      if (mega) mega.textContent = megaChars[i] || 'A';
+      if (hint) hint.classList.toggle('is-done', i >= 1);
+      if (stepEl) stepEl.textContent = String(i+1).padStart(2,'0');
+      if (nextEl) nextEl.textContent = nextLabels[i] || '— 완결';
+      if (keywordEl) keywordEl.textContent = keywords[i] || keywords[4];
+    };
+    const isMobile = () => matchMedia('(max-width:860px)').matches;
+    const updateTerra = () => {
+      if (isMobile()){
+        setTerra(letters.length - 1);
+        return;
+      }
+      const rect = sticky.getBoundingClientRect();
+      const total = sticky.offsetHeight - window.innerHeight;
+      if (total <= 0){ setTerra(letters.length - 1); return; }
+      const scrolled = Math.min(Math.max(-rect.top, 0), total);
+      const p = scrolled / total; // 0..1
+      const i = Math.min(letters.length - 1, Math.max(0, Math.floor(p * letters.length * 0.999)));
+      setTerra(i);
+    };
+    let rafId;
+    const loop = () => { updateTerra(); rafId = requestAnimationFrame(loop); };
+    loop();
+    // Also hook standard scroll events (triple safety)
+    window.addEventListener('scroll', updateTerra, {passive:true});
+    document.addEventListener('scroll', updateTerra, {passive:true});
+    window.addEventListener('resize', updateTerra);
+    updateTerra();
+  }
+
+  /* ── Cursor follow (desktop, non-touch) ── */
   const fine = matchMedia('(pointer:fine)').matches;
-  if (fine && !reduced){
+  if (fine && !prefersReduced){
     const c = $('.cursor');
     let x=0,y=0,tx=0,ty=0;
-    window.addEventListener('mousemove', e => { tx=e.clientX; ty=e.clientY; c.classList.add('active'); });
-    window.addEventListener('mouseleave', () => c.classList.remove('active'));
-    const tick = () => {
-      x += (tx - x) * .22; y += (ty - y) * .22;
-      c.style.transform = `translate(${x}px, ${y}px) translate(-50%,-50%) scale(${c.classList.contains('hover') ? 3.2 : 0.4})`;
-      requestAnimationFrame(tick);
+    window.addEventListener('mousemove', e => { tx=e.clientX; ty=e.clientY; c.classList.add('is-active'); });
+    window.addEventListener('mouseleave', () => c.classList.remove('is-active'));
+    const loop = () => {
+      x += (tx - x) * 0.18;
+      y += (ty - y) * 0.18;
+      c.style.transform = `translate(${x}px, ${y}px) translate(-50%,-50%) scale(${c.classList.contains('is-hover') ? 2.6 : 0.4})`;
+      requestAnimationFrame(loop);
     };
-    tick();
-    $$('[data-h], a, button, .svc-row, .ins, .why-item, .terra__card').forEach(el => {
-      el.addEventListener('mouseenter', () => c.classList.add('hover'));
-      el.addEventListener('mouseleave', () => c.classList.remove('hover'));
+    loop();
+    $$('[data-hover], a, button, .svc-row, .ins, .why-item').forEach(el => {
+      el.addEventListener('mouseenter', () => c.classList.add('is-hover'));
+      el.addEventListener('mouseleave', () => c.classList.remove('is-hover'));
     });
   }
 
-  /* ── Hero sun parallax ── */
+  /* ── Parallax on hero sun ── */
   const sun = $('.hero__sun');
-  if (sun && !reduced){
+  if (sun && !prefersReduced){
     window.addEventListener('scroll', () => {
-      const y = Math.min(window.scrollY, window.innerHeight*1.4);
-      sun.style.transform = `translate3d(${y * -0.08}px, ${y * 0.28}px, 0) rotate(${y * 0.05}deg)`;
+      const y = window.scrollY;
+      if (y < window.innerHeight * 1.2){
+        sun.style.transform = `translate3d(0, ${y * 0.22}px, 0) rotate(${y * 0.04}deg)`;
+      }
     }, {passive:true});
   }
 
-  /* ── Smooth anchor scroll ── */
+  /* ── Smooth anchor scroll with offset ── */
   $$('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const id = a.getAttribute('href');
@@ -1488,104 +1510,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
       window.scrollTo({top:y, behavior:'smooth'});
     });
   });
-
-  /* ── MANIFESTO pinned scrub ── */
-  const manSec = $('#manifesto');
-  if (manSec){
-    const lines = $$('.manifesto__line', manSec);
-    const stepEl = $('#manStep');
-    const progEl = $('#manProg');
-    let lastI = -1;
-    const update = () => {
-      const rect = manSec.getBoundingClientRect();
-      const total = manSec.offsetHeight - window.innerHeight;
-      if (total <= 0) return;
-      const s = Math.min(Math.max(-rect.top, 0), total);
-      // map to [0,1] within the pinned window; slight inset so first & last slides dwell
-      const raw = s / total;
-      const p = Math.min(1, Math.max(0, raw));
-      // Divide pin equally among N slides, each slide shows for 1/N of the pin
-      const n = lines.length;
-      let i = Math.floor(p * n);
-      if (i >= n) i = n - 1;
-      if (i !== lastI){
-        lastI = i;
-        lines.forEach((el, idx) => el.classList.toggle('is-on', idx === i));
-        if (stepEl) stepEl.textContent = String(i+1).padStart(2,'0');
-      }
-      if (progEl) progEl.style.setProperty('--p', (p*100).toFixed(1)+'%');
-    };
-    let ticking = false;
-    const tick = () => { update(); ticking = false; };
-    window.addEventListener('scroll', () => { if (!ticking){ requestAnimationFrame(tick); ticking = true; } }, {passive:true});
-    window.addEventListener('resize', update);
-    update();
-  }
-
-  /* ── TERRA horizontal scroll-pin ── */
-  const terra = $('#philosophy');
-  const terraPin = $('#terraPin');
-  const terraTrack = $('#terraTrack');
-  if (terra && terraPin && terraTrack){
-    const cards = $$('.terra__card', terraTrack);
-    const rail = $('#terraRail');
-    const kw = $('#terraKw');
-    const nEl = $('#terraN');
-    const kwLabels = ['Trust · 신뢰','Expertise · 경험','Readiness · 실행','Research · 근거','Accountability · 책임'];
-    let lastI = -1;
-
-    const isMobile = () => matchMedia('(max-width:780px)').matches;
-
-    // Compute the exact horizontal travel we need, and set section height = pin + travel.
-    // Shorter factor = faster horizontal scroll relative to vertical.
-    let maxX = 0;
-    const SPEED = 0.78; // <1 = faster horizontal per vertical scroll
-    const layout = () => {
-      if (isMobile()){
-        terra.style.height = '';
-        terraTrack.style.transform = '';
-        return;
-      }
-      maxX = Math.max(0, terraTrack.scrollWidth - window.innerWidth);
-      terra.style.height = (window.innerHeight + maxX * SPEED) + 'px';
-    };
-
-    const update = () => {
-      if (isMobile()){
-        terraTrack.style.transform = '';
-        cards.forEach(c => c.classList.add('is-on'));
-        return;
-      }
-      const rect = terra.getBoundingClientRect();
-      const total = terra.offsetHeight - window.innerHeight;
-      if (total <= 0) return;
-      const s = Math.min(Math.max(-rect.top, 0), total);
-      const p = s / total; // 0..1
-      terraTrack.style.transform = `translate3d(${-p * maxX}px, 0, 0)`;
-
-      // Progress-based active card so first card = 01 at start, last card = 05 at end.
-      const n = cards.length;
-      let best = Math.floor(p * n);
-      if (best >= n) best = n - 1;
-      if (best < 0) best = 0;
-      if (best !== lastI){
-        lastI = best;
-        cards.forEach((c, idx) => c.classList.toggle('is-on', idx === best));
-        if (kw) kw.textContent = kwLabels[best] || kwLabels[0];
-        if (nEl) nEl.textContent = String(best+1).padStart(2,'0');
-      }
-      if (rail) rail.style.setProperty('--p', (p*100).toFixed(1)+'%');
-    };
-    let ticking = false;
-    const tick = () => { update(); ticking = false; };
-    window.addEventListener('scroll', () => { if (!ticking){ requestAnimationFrame(tick); ticking = true; } }, {passive:true});
-    window.addEventListener('resize', () => { layout(); update(); });
-    // Wait for fonts / images so scrollWidth is right
-    const init = () => { layout(); update(); };
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(init);
-    init();
-    window.addEventListener('load', init);
-  }
 })();
 </script>
 </body>
